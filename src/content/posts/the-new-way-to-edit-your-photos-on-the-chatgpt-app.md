@@ -17,6 +17,8 @@ Before launching the long-anticipated ChatGPT-5, OpenAI upgraded their latest om
 
 If your work starts with documents rather than photos, our [Gemini Notebook review](/gemini-notebook-app-review/) explains how Google's source-based AI app handles citations, summaries and Audio Overviews.
 
+For an AI app focused on carrying out tasks, see our [Meta Muse beginner guide](/meta-muse-app-guide/), including official download routes and access checks.
+
 ## What's new in the 4o image upgrade?
 
 - Adding and editing text elements with ease ✨
