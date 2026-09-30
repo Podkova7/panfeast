@@ -1,9 +1,10 @@
 ---
-title: "New iPhone, Not Enough iCloud Storage? Your Transfer Options"
+title: New iPhone, Not Enough iCloud Storage? Your Transfer Options
 slug: new-iphone-not-enough-icloud-storage
-description: "Move to a new iPhone when iCloud is full: compare temporary backup storage, direct transfer and computer backups, including the 21-day deadline."
+description: 'Move to a new iPhone when iCloud is full: compare temporary backup storage, direct transfer and computer backups, including the 21-day deadline.'
 publishDate: 2026-09-14
-author: App-Tipps Editorial
+updatedDate: ''
+author: Michael Wilson
 category: App Tips
 categories:
   - App Tips
@@ -11,13 +12,17 @@ tags:
   - iPhone
   - iCloud
   - Backups
+featuredImage: /images/2026/09/new-iphone-not-enough-icloud-storage.svg
+featuredImageAlt: 'Three iPhone transfer options: direct transfer, temporary iCloud storage and computer backup'
+rating: null
+correctionNote: ''
+seoTitle: ''
+canonicalUrl: ''
+noindex: false
+draft: false
 relatedSlugs:
   - transfer-authenticator-new-iphone
   - quick-share-android-iphone-airdrop-guide
-featuredImage: /images/2026/09/new-iphone-not-enough-icloud-storage.svg
-featuredImageAlt: "Three iPhone transfer options: direct transfer, temporary iCloud storage and computer backup"
-noindex: false
-draft: false
 ---
 
 **You may not need to buy more iCloud storage just to move to a new iPhone.** Apple offers temporary backup space to eligible buyers, and also supports direct transfer and computer backups.
