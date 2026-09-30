@@ -4,7 +4,7 @@ slug: transfer-authenticator-new-iphone
 description: Transfer Google and Microsoft Authenticator to a new iPhone. Learn what syncs, what needs sign-in again and what to test before trading in.
 publishDate: 2026-09-14
 updatedDate: ''
-author: App-Tipps Editorial
+author: Alexander Davis
 category: App Tips
 categories:
   - App Tips
