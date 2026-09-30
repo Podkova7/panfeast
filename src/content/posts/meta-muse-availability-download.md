@@ -8,8 +8,8 @@ category: App Tips
 categories: [App Tips]
 tags: [Meta Muse, Android, iPhone, AI Apps]
 relatedSlugs: [meta-muse-app-guide, meta-muse-prompts-first-tasks]
-featuredImage: /images/2026/09/meta-muse-official.webp
-featuredImageAlt: "Meta's official Muse launch artwork"
+featuredImage: /images/2026/09/meta-muse-availability.webp
+featuredImageAlt: "Editorial illustration of a phone download, lock and globe representing app access checks"
 draft: false
 noindex: false
 ---
@@ -18,7 +18,7 @@ noindex: false
 
 Meta's [September 8 launch announcement](https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/) describes a US rollout on iOS, Android and the web. We have not independently verified access in every country as of **September 30, 2026**. No worldwide launch date is established by that announcement.
 
-*Image: Meta's official launch artwork. This is a researched access guide, not a test of every regional storefront.*
+*AI-generated editorial illustration of app access checks; not a Muse screenshot or a map of supported countries. This is a researched access guide, not a test of every regional storefront.*
 
 ## Start with the official download routes
 

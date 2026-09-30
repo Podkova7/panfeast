@@ -8,8 +8,8 @@ category: App Tips
 categories: [App Tips]
 tags: [Meta Muse, AI Prompts, AI Apps, Productivity]
 relatedSlugs: [meta-muse-app-guide, meta-muse-availability-download]
-featuredImage: /images/2026/09/meta-muse-official.webp
-featuredImageAlt: "Meta's official artwork introducing the Muse personal AI agent"
+featuredImage: /images/2026/09/meta-muse-practical-tasks.webp
+featuredImageAlt: "Editorial illustration of a phone surrounded by shopping, travel, meal-planning, checklist and calendar objects"
 draft: false
 noindex: false
 ---
@@ -18,7 +18,7 @@ noindex: false
 
 Meta [describes Muse](https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/) as an agent that can browse, handle tasks across services and continue longer jobs in the background. These examples are **suggested prompts**, not tasks we completed in a hands-on test. Actual results depend on access, connected services and the task.
 
-*Image: Meta's official Muse launch artwork.*
+*AI-generated editorial illustration of the five suggested task types; not a Muse screenshot or evidence of completed tasks.*
 
 If you have not installed it, start with our [Muse download and availability checks](/meta-muse-availability-download/). For an overview of the product, read [what Meta Muse is](/meta-muse-app-guide/).
 
