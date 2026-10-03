@@ -1,0 +1,522 @@
+[
+  {
+    "index": 1,
+    "title": "How to Use StandBy Mode on iPhone: Complete Setup, Smart Stacks & Night Mode",
+    "seoTitle": "iPhone StandBy Mode: Complete Setup & Widget Guide",
+    "slug": "iphone-standby-mode-smart-stacks-setup",
+    "publishDate": "2025-02-01T08:00:00Z",
+    "category": "iPhone Tips",
+    "categories": [
+      "iPhone Tips",
+      "iOS Guides"
+    ],
+    "tags": [
+      "iPhone",
+      "StandBy Mode",
+      "Widgets",
+      "Smart Stacks",
+      "iOS"
+    ],
+    "author": "Michael Wilson",
+    "primaryKeyword": "iPhone StandBy mode setup",
+    "wordCount": 921,
+    "imagePrompt": "A sleek minimalist studio photograph of an iPhone in landscape orientation mounted on a modern magnetic aluminum MagSafe desk stand, displaying the StandBy clock and dynamic calendar widget glowing in soft amber. Clean dark walnut desk background, soft rim lighting, 16:9 aspect ratio.",
+    "localImagePath": "/images/iphone-standby-mode-smart-stacks-setup.jpg",
+    "postsImagePath": "/images/posts/iphone-standby-mode-smart-stacks-setup.jpg",
+    "filePath": "src/content/posts/iphone-standby-mode-smart-stacks-setup.md"
+  },
+  {
+    "index": 2,
+    "title": "How to Optimize iPhone Storage with iCloud Photos and Local Cache Management",
+    "seoTitle": "Optimize iPhone Storage: iCloud Photos & Cache Guide",
+    "slug": "iphone-icloud-photos-storage-optimization",
+    "publishDate": "2025-02-08T08:00:00Z",
+    "category": "iPhone Tips",
+    "categories": [
+      "iPhone Tips",
+      "Apple Ecosystem"
+    ],
+    "tags": [
+      "iPhone",
+      "iCloud Photos",
+      "Storage",
+      "Optimization",
+      "Photos"
+    ],
+    "author": "Michael Wilson",
+    "primaryKeyword": "iPhone optimize storage iCloud Photos",
+    "wordCount": 898,
+    "imagePrompt": "A clean minimalist photograph of an iPhone resting flat on a white architectural concrete surface, displaying the iOS Photos storage optimization toggle and storage graph. Soft diffused morning daylight, modern tech aesthetic, 16:9 aspect ratio.",
+    "localImagePath": "/images/iphone-icloud-photos-storage-optimization.jpg",
+    "postsImagePath": "/images/posts/iphone-icloud-photos-storage-optimization.jpg",
+    "filePath": "src/content/posts/iphone-icloud-photos-storage-optimization.md"
+  },
+  {
+    "index": 3,
+    "title": "How to Customize the iPhone Lock Screen: Widgets, Depth Effects & Focus Linking",
+    "seoTitle": "iPhone Lock Screen Customization: Widgets & Depth Guide",
+    "slug": "iphone-lock-screen-customization-widgets-guide",
+    "publishDate": "2025-02-15T08:00:00Z",
+    "category": "iPhone Tips",
+    "categories": [
+      "iPhone Tips",
+      "iOS Guides"
+    ],
+    "tags": [
+      "iPhone",
+      "Lock Screen",
+      "Widgets",
+      "Customization",
+      "Focus Mode"
+    ],
+    "author": "Michael Wilson",
+    "primaryKeyword": "iPhone Lock Screen customization widgets",
+    "wordCount": 911,
+    "imagePrompt": "A stylish studio photograph of an iPhone displaying an artistic portrait wallpaper with multi-layered depth effect cutting across modern sans-serif clock typography and inline weather widgets. Elegant graphite textured desk, 16:9 aspect ratio.",
+    "localImagePath": "/images/iphone-lock-screen-customization-widgets-guide.jpg",
+    "postsImagePath": "/images/posts/iphone-lock-screen-customization-widgets-guide.jpg",
+    "filePath": "src/content/posts/iphone-lock-screen-customization-widgets-guide.md"
+  },
+  {
+    "index": 4,
+    "title": "How to Use Live Text and Visual Look Up on iPhone for Instant Translation & Search",
+    "seoTitle": "iPhone Live Text & Visual Look Up: Complete Guide",
+    "slug": "iphone-live-text-visual-look-up-guide",
+    "publishDate": "2025-02-22T08:00:00Z",
+    "category": "iPhone Tips",
+    "categories": [
+      "iPhone Tips",
+      "iOS Guides"
+    ],
+    "tags": [
+      "iPhone",
+      "Live Text",
+      "Visual Look Up",
+      "Camera",
+      "Apple Intelligence"
+    ],
+    "author": "Michael Wilson",
+    "primaryKeyword": "iPhone Live Text Visual Look Up",
+    "wordCount": 963,
+    "imagePrompt": "A high-end editorial close-up photograph of an iPhone camera viewfinder isolating handwritten notes and a botanical plant leaf, showing glowing interactive selection highlights and a floating Visual Look Up info card. Warm natural light, 16:9 aspect ratio.",
+    "localImagePath": "/images/iphone-live-text-visual-look-up-guide.jpg",
+    "postsImagePath": "/images/posts/iphone-live-text-visual-look-up-guide.jpg",
+    "filePath": "src/content/posts/iphone-live-text-visual-look-up-guide.md"
+  },
+  {
+    "index": 5,
+    "title": "How to Use Safari Profiles and Tab Groups on iOS and iPadOS for Deep Work",
+    "seoTitle": "Safari Profiles & Tab Groups: iOS & iPadOS Guide",
+    "slug": "safari-profiles-tab-groups-ios-guide",
+    "publishDate": "2025-03-01T08:00:00Z",
+    "category": "iOS Guides",
+    "categories": [
+      "iOS Guides",
+      "Mac & macOS"
+    ],
+    "tags": [
+      "Safari",
+      "Profiles",
+      "Tab Groups",
+      "Productivity",
+      "iOS"
+    ],
+    "author": "Sylvie Fox",
+    "primaryKeyword": "Safari profiles tab groups iOS",
+    "wordCount": 931,
+    "imagePrompt": "A minimalist studio composition of an iPad Pro and iPhone side by side on a clean oak desk, showing Safari with distinct colorful Profile tabs and synchronized Tab Groups. Crisp ambient lighting, modern aesthetic, 16:9 aspect ratio.",
+    "localImagePath": "/images/safari-profiles-tab-groups-ios-guide.jpg",
+    "postsImagePath": "/images/posts/safari-profiles-tab-groups-ios-guide.jpg",
+    "filePath": "src/content/posts/safari-profiles-tab-groups-ios-guide.md"
+  },
+  {
+    "index": 6,
+    "title": "The Definitive Guide to Apple Reminders: Smart Lists, Tags & Grocery Sorting",
+    "seoTitle": "Apple Reminders: Smart Lists & Grocery Sorting Guide",
+    "slug": "apple-reminders-smart-lists-grocery-guide",
+    "publishDate": "2025-03-08T08:00:00Z",
+    "category": "iOS Guides",
+    "categories": [
+      "iOS Guides",
+      "iPhone Tips"
+    ],
+    "tags": [
+      "Apple Reminders",
+      "Smart Lists",
+      "Productivity",
+      "Organization",
+      "iOS"
+    ],
+    "author": "Amelia Thomas",
+    "primaryKeyword": "Apple Reminders smart lists grocery",
+    "wordCount": 798,
+    "imagePrompt": "A clean minimalist flat-lay photograph of an iPhone resting beside a sleek pen and ceramic coffee mug on a white desk, displaying Apple Reminders with categorized grocery aisle headers and custom color tags. Crisp overhead light, 16:9 aspect ratio.",
+    "localImagePath": "/images/apple-reminders-smart-lists-grocery-guide.jpg",
+    "postsImagePath": "/images/posts/apple-reminders-smart-lists-grocery-guide.jpg",
+    "filePath": "src/content/posts/apple-reminders-smart-lists-grocery-guide.md"
+  },
+  {
+    "index": 7,
+    "title": "How to Use iOS Interactive Widgets: Automate Tasks Directly from the Home Screen",
+    "seoTitle": "iOS Interactive Widgets: Home Screen Automations Guide",
+    "slug": "ios-interactive-widgets-home-screen-guide",
+    "publishDate": "2025-03-15T08:00:00Z",
+    "category": "iOS Guides",
+    "categories": [
+      "iOS Guides",
+      "iPhone Tips"
+    ],
+    "tags": [
+      "iOS",
+      "Widgets",
+      "Home Screen",
+      "Automations",
+      "iPhone"
+    ],
+    "author": "Sylvie Fox",
+    "primaryKeyword": "iOS interactive widgets Home Screen",
+    "wordCount": 831,
+    "imagePrompt": "A modern studio close-up photograph of an iPhone screen showing interactive Home Screen widgets: an interactive task checklist with checked boxes and a HomeKit lighting slider glowing softly. Dark graphite background, 16:9 aspect ratio.",
+    "localImagePath": "/images/ios-interactive-widgets-home-screen-guide.jpg",
+    "postsImagePath": "/images/posts/ios-interactive-widgets-home-screen-guide.jpg",
+    "filePath": "src/content/posts/ios-interactive-widgets-home-screen-guide.md"
+  },
+  {
+    "index": 8,
+    "title": "How to Customize and Optimize iOS Control Center for Everyday Efficiency",
+    "seoTitle": "iOS Control Center Customization: Complete Setup Guide",
+    "slug": "ios-control-center-customization-shortcuts-guide",
+    "publishDate": "2025-03-22T08:00:00Z",
+    "category": "iOS Guides",
+    "categories": [
+      "iOS Guides",
+      "iPhone Tips"
+    ],
+    "tags": [
+      "iOS",
+      "Control Center",
+      "Customization",
+      "Shortcuts",
+      "iPhone Tips"
+    ],
+    "author": "Sylvie Fox",
+    "primaryKeyword": "iOS Control Center customization",
+    "wordCount": 843,
+    "imagePrompt": "A sleek studio photograph of an iPhone display showing a customized iOS Control Center grid with colorful round toggles, hearing decibel metrics, and shortcut buttons. Elegant slate texture background, 16:9 aspect ratio.",
+    "localImagePath": "/images/ios-control-center-customization-shortcuts-guide.jpg",
+    "postsImagePath": "/images/posts/ios-control-center-customization-shortcuts-guide.jpg",
+    "filePath": "src/content/posts/ios-control-center-customization-shortcuts-guide.md"
+  },
+  {
+    "index": 9,
+    "title": "How to Use Quick Look on macOS: Essential Shortcuts, Markup & Developer Plugins",
+    "seoTitle": "macOS Quick Look: Shortcuts, Markup & Plugins Guide",
+    "slug": "macos-quick-look-plugins-keyboard-shortcuts",
+    "publishDate": "2025-03-29T08:00:00Z",
+    "category": "Mac & macOS",
+    "categories": [
+      "Mac & macOS",
+      "iOS Guides"
+    ],
+    "tags": [
+      "macOS",
+      "Quick Look",
+      "Productivity",
+      "Keyboard Shortcuts",
+      "Finder"
+    ],
+    "author": "Alexander Davis",
+    "primaryKeyword": "macOS Quick Look shortcuts plugins",
+    "wordCount": 898,
+    "imagePrompt": "An elegant minimalist photograph of a space black MacBook Pro screen displaying a floating macOS Quick Look preview window with clean code syntax highlighting and markup tools. Ambient warm desk lighting, 16:9 aspect ratio.",
+    "localImagePath": "/images/macos-quick-look-plugins-keyboard-shortcuts.jpg",
+    "postsImagePath": "/images/posts/macos-quick-look-plugins-keyboard-shortcuts.jpg",
+    "filePath": "src/content/posts/macos-quick-look-plugins-keyboard-shortcuts.md"
+  },
+  {
+    "index": 10,
+    "title": "How to Manage macOS Notifications and Focus Filters for Distraction-Free Work",
+    "seoTitle": "macOS Notifications & Focus Modes: Deep Work Guide",
+    "slug": "macos-notifications-focus-modes-deep-work",
+    "publishDate": "2025-04-05T08:00:00Z",
+    "category": "Mac & macOS",
+    "categories": [
+      "Mac & macOS",
+      "iOS Guides"
+    ],
+    "tags": [
+      "macOS",
+      "Notifications",
+      "Focus Mode",
+      "Productivity",
+      "Deep Work"
+    ],
+    "author": "Daniel Clark",
+    "primaryKeyword": "macOS notifications Focus modes",
+    "wordCount": 871,
+    "imagePrompt": "A serene minimalist workspace showcasing a Mac Studio display showing a clean distraction-free desktop with Focus mode active, quiet notification banners, and a subtle glowing indicator. Architectural Scandinavian aesthetic, 16:9 aspect ratio.",
+    "localImagePath": "/images/macos-notifications-focus-modes-deep-work.jpg",
+    "postsImagePath": "/images/posts/macos-notifications-focus-modes-deep-work.jpg",
+    "filePath": "src/content/posts/macos-notifications-focus-modes-deep-work.md"
+  },
+  {
+    "index": 11,
+    "title": "The Complete Guide to the macOS Passwords App and Keychain Security",
+    "seoTitle": "macOS Passwords App & Keychain Security Guide",
+    "slug": "macos-passwords-app-keychain-access-guide",
+    "publishDate": "2025-04-12T08:00:00Z",
+    "category": "Mac & macOS",
+    "categories": [
+      "Mac & macOS",
+      "Apple Ecosystem"
+    ],
+    "tags": [
+      "macOS",
+      "Passwords",
+      "Keychain",
+      "Security",
+      "Passkeys"
+    ],
+    "author": "Daniel Clark",
+    "primaryKeyword": "macOS Passwords app Keychain Access",
+    "wordCount": 834,
+    "imagePrompt": "A high-end minimalist photograph of a space gray MacBook Pro open on a dark obsidian stone desk, showing the native macOS Passwords app interface with glowing biometric passkey indicators. Soft cinematic overhead lighting, 16:9 aspect ratio.",
+    "localImagePath": "/images/macos-passwords-app-keychain-access-guide.jpg",
+    "postsImagePath": "/images/posts/macos-passwords-app-keychain-access-guide.jpg",
+    "filePath": "src/content/posts/macos-passwords-app-keychain-access-guide.md"
+  },
+  {
+    "index": 12,
+    "title": "How to Benchmark and Monitor Mac Hardware Performance with Activity Monitor & CLI",
+    "seoTitle": "Monitor Mac Performance: Activity Monitor & CLI Metrics",
+    "slug": "macos-activity-monitor-apple-silicon-metrics",
+    "publishDate": "2025-04-19T08:00:00Z",
+    "category": "Mac & macOS",
+    "categories": [
+      "Mac & macOS",
+      "iOS Guides"
+    ],
+    "tags": [
+      "macOS",
+      "Activity Monitor",
+      "Apple Silicon",
+      "Performance",
+      "Terminal"
+    ],
+    "author": "Daniel Clark",
+    "primaryKeyword": "macOS Activity Monitor Apple Silicon",
+    "wordCount": 868,
+    "imagePrompt": "A modern technical photograph of an Apple Silicon Mac Studio setup, showing a studio display with live Activity Monitor memory pressure graphs and terminal power metrics. Dark minimal studio aesthetic, 16:9 aspect ratio.",
+    "localImagePath": "/images/macos-activity-monitor-apple-silicon-metrics.jpg",
+    "postsImagePath": "/images/posts/macos-activity-monitor-apple-silicon-metrics.jpg",
+    "filePath": "src/content/posts/macos-activity-monitor-apple-silicon-metrics.md"
+  },
+  {
+    "index": 13,
+    "title": "How to Master Smart Stack and Dynamic Widgets on Apple Watch",
+    "seoTitle": "Apple Watch Smart Stack: Widgets & Gestures Guide",
+    "slug": "apple-watch-smart-stack-widgets-guide",
+    "publishDate": "2025-04-26T08:00:00Z",
+    "category": "Apple Watch",
+    "categories": [
+      "Apple Watch",
+      "iOS Guides"
+    ],
+    "tags": [
+      "Apple Watch",
+      "Smart Stack",
+      "Widgets",
+      "watchOS",
+      "Productivity"
+    ],
+    "author": "Sophia Garcia",
+    "primaryKeyword": "Apple Watch Smart Stack widgets",
+    "wordCount": 874,
+    "imagePrompt": "A close-up studio photograph of an Apple Watch Ultra with alpine loop band resting on a textured granite surface, displaying the dynamic Smart Stack with interactive weather and calendar widgets. Muted modern aesthetic, 16:9 aspect ratio.",
+    "localImagePath": "/images/apple-watch-smart-stack-widgets-guide.jpg",
+    "postsImagePath": "/images/posts/apple-watch-smart-stack-widgets-guide.jpg",
+    "filePath": "src/content/posts/apple-watch-smart-stack-widgets-guide.md"
+  },
+  {
+    "index": 14,
+    "title": "How to Set Up and Use Heart Rate Zone Training on Apple Watch Workouts",
+    "seoTitle": "Apple Watch Heart Rate Zone Training: Workout Guide",
+    "slug": "apple-watch-heart-rate-zone-training-guide",
+    "publishDate": "2025-05-03T08:00:00Z",
+    "category": "Apple Watch",
+    "categories": [
+      "Apple Watch",
+      "iOS Guides"
+    ],
+    "tags": [
+      "Apple Watch",
+      "Heart Rate",
+      "Workouts",
+      "Fitness",
+      "Cardio"
+    ],
+    "author": "Sophia Garcia",
+    "primaryKeyword": "Apple Watch heart rate zones training",
+    "wordCount": 888,
+    "imagePrompt": "A dynamic athletic studio photograph of an Apple Watch displaying color-coded Heart Rate Zones during an outdoor interval run, with subtle neon zone rings glowing softly. Soft morning trail backdrop, 16:9 aspect ratio.",
+    "localImagePath": "/images/apple-watch-heart-rate-zone-training-guide.jpg",
+    "postsImagePath": "/images/posts/apple-watch-heart-rate-zone-training-guide.jpg",
+    "filePath": "src/content/posts/apple-watch-heart-rate-zone-training-guide.md"
+  },
+  {
+    "index": 15,
+    "title": "How to Use Apple Watch Noise App and Headphone Audio Safety to Protect Hearing",
+    "seoTitle": "Apple Watch Noise App & Audio Safety: Hearing Guide",
+    "slug": "apple-watch-noise-app-hearing-health-guide",
+    "publishDate": "2025-05-10T08:00:00Z",
+    "category": "Apple Watch",
+    "categories": [
+      "Apple Watch",
+      "iPhone Tips"
+    ],
+    "tags": [
+      "Apple Watch",
+      "Noise App",
+      "Hearing Health",
+      "Audio Safety",
+      "Health"
+    ],
+    "author": "Sophia Garcia",
+    "primaryKeyword": "Apple Watch Noise app hearing health",
+    "wordCount": 887,
+    "imagePrompt": "A sleek minimalist studio photograph of an Apple Watch showing a yellow environmental decibel warning meter on its screen, resting beside AirPods Max on a warm wooden sound studio desk. Soft ambient lighting, 16:9 aspect ratio.",
+    "localImagePath": "/images/apple-watch-noise-app-hearing-health-guide.jpg",
+    "postsImagePath": "/images/posts/apple-watch-noise-app-hearing-health-guide.jpg",
+    "filePath": "src/content/posts/apple-watch-noise-app-hearing-health-guide.md"
+  },
+  {
+    "index": 16,
+    "title": "How to Use Apple NameDrop for Instant Contact Sharing Across iPhone and Watch",
+    "seoTitle": "Apple NameDrop Guide: Contact Sharing on iPhone & Watch",
+    "slug": "apple-namedrop-contact-sharing-iphone-watch-guide",
+    "publishDate": "2025-05-17T08:00:00Z",
+    "category": "Apple Ecosystem",
+    "categories": [
+      "Apple Ecosystem",
+      "iPhone Tips"
+    ],
+    "tags": [
+      "Apple Ecosystem",
+      "NameDrop",
+      "AirDrop",
+      "Contacts",
+      "Apple Watch"
+    ],
+    "author": "Michael Wilson",
+    "primaryKeyword": "Apple NameDrop contact sharing",
+    "wordCount": 851,
+    "imagePrompt": "A dynamic studio photograph of two sleek iPhones meeting top-to-top with an illuminated glowing particle wave connecting both displays, showcasing a customized Apple Contact Poster. Dark elegant background, 16:9 aspect ratio.",
+    "localImagePath": "/images/apple-namedrop-contact-sharing-iphone-watch-guide.jpg",
+    "postsImagePath": "/images/posts/apple-namedrop-contact-sharing-iphone-watch-guide.jpg",
+    "filePath": "src/content/posts/apple-namedrop-contact-sharing-iphone-watch-guide.md"
+  },
+  {
+    "index": 17,
+    "title": "The Complete Guide to Apple Handoff: Seamless Continuity Between Mac, iPad & iPhone",
+    "seoTitle": "Apple Handoff Complete Guide: Mac, iPad & iPhone Continuity",
+    "slug": "apple-handoff-iphone-mac-ipad-continuity-guide",
+    "publishDate": "2025-05-24T08:00:00Z",
+    "category": "Apple Ecosystem",
+    "categories": [
+      "Apple Ecosystem",
+      "Mac & macOS"
+    ],
+    "tags": [
+      "Apple Ecosystem",
+      "Handoff",
+      "Continuity",
+      "Mac",
+      "iPad"
+    ],
+    "author": "Daniel Clark",
+    "primaryKeyword": "Apple Handoff continuity iPhone Mac",
+    "wordCount": 937,
+    "imagePrompt": "An elegant minimalist workspace featuring a MacBook Pro and an iPad side-by-side on a light birch desk, showing an email draft transferring seamlessly across screens with subtle glowing connection icons. Soft daylight, 16:9 aspect ratio.",
+    "localImagePath": "/images/apple-handoff-iphone-mac-ipad-continuity-guide.jpg",
+    "postsImagePath": "/images/posts/apple-handoff-iphone-mac-ipad-continuity-guide.jpg",
+    "filePath": "src/content/posts/apple-handoff-iphone-mac-ipad-continuity-guide.md"
+  },
+  {
+    "index": 18,
+    "title": "How to Configure Apple HomeKit and the Home App for Smart Home Automation",
+    "seoTitle": "Apple HomeKit Automations: Home App Setup & Matter Guide",
+    "slug": "apple-homekit-home-app-automations-guide",
+    "publishDate": "2025-05-31T08:00:00Z",
+    "category": "Apple Ecosystem",
+    "categories": [
+      "Apple Ecosystem",
+      "iOS Guides"
+    ],
+    "tags": [
+      "Apple Ecosystem",
+      "HomeKit",
+      "Smart Home",
+      "Automations",
+      "Matter"
+    ],
+    "author": "Daniel Clark",
+    "primaryKeyword": "Apple HomeKit Home app automations",
+    "wordCount": 926,
+    "imagePrompt": "A warm architectural photograph of a modern living room with smart ambient lighting, showing an iPad mounted on the wall displaying the Apple Home app with interactive climate and lighting tiles. Soft evening mood, 16:9 aspect ratio.",
+    "localImagePath": "/images/apple-homekit-home-app-automations-guide.jpg",
+    "postsImagePath": "/images/posts/apple-homekit-home-app-automations-guide.jpg",
+    "filePath": "src/content/posts/apple-homekit-home-app-automations-guide.md"
+  },
+  {
+    "index": 19,
+    "title": "Craft Docs iOS App Review: The Modern Modular Document and PKM Powerhouse",
+    "seoTitle": "Craft Docs iOS Review: Modular Documents & PKM System",
+    "slug": "craft-docs-ios-app-review",
+    "publishDate": "2025-06-07T08:00:00Z",
+    "category": "App Reviews",
+    "categories": [
+      "App Reviews",
+      "iOS Guides"
+    ],
+    "tags": [
+      "App Review",
+      "Craft Docs",
+      "Productivity",
+      "PKM",
+      "Markdown"
+    ],
+    "author": "Amelia Thomas",
+    "primaryKeyword": "Craft Docs iOS review",
+    "wordCount": 833,
+    "imagePrompt": "A clean minimalist flat-lay photograph of an iPad Pro and Apple Pencil displaying Craft Docs with structured visual card blocks, elegant typography, and nested subpages. Modern white marble workspace, 16:9 aspect ratio.",
+    "localImagePath": "/images/craft-docs-ios-app-review.jpg",
+    "postsImagePath": "/images/posts/craft-docs-ios-app-review.jpg",
+    "filePath": "src/content/posts/craft-docs-ios-app-review.md"
+  },
+  {
+    "index": 20,
+    "title": "Bear Notes 2 Review: The Markdown Writer's Dream App for Apple Ecosystem",
+    "seoTitle": "Bear 2 Notes Review: Markdown Writing App for Apple",
+    "slug": "bear-notes-markdown-app-review",
+    "publishDate": "2025-06-14T08:00:00Z",
+    "category": "App Reviews",
+    "categories": [
+      "App Reviews",
+      "iOS Guides"
+    ],
+    "tags": [
+      "App Review",
+      "Bear Notes",
+      "Markdown",
+      "Writing",
+      "Productivity"
+    ],
+    "author": "Alexander Davis",
+    "primaryKeyword": "Bear notes markdown app review",
+    "wordCount": 846,
+    "imagePrompt": "A cozy aesthetic photograph of an iPhone in a leather case resting next to an open notebook on a dark walnut café table, displaying the Bear 2 editor with clean Markdown folding headers and smooth typography. Soft ambient coffee shop lighting, 16:9 aspect ratio.",
+    "localImagePath": "/images/bear-notes-markdown-app-review.jpg",
+    "postsImagePath": "/images/posts/bear-notes-markdown-app-review.jpg",
+    "filePath": "src/content/posts/bear-notes-markdown-app-review.md"
+  }
+]

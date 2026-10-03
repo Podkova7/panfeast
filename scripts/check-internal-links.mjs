@@ -3,7 +3,7 @@ import { join, relative, sep } from 'node:path';
 import legacyRoutes from '../src/data/legacy-routes.json' with { type: 'json' };
 import retiredPostSlugs from '../src/data/retired-posts.json' with { type: 'json' };
 
-const SITE = 'https://app-tipps.com';
+const SITE = 'https://panfeast.com';
 const dist = join(process.cwd(), 'dist');
 const retiredPaths = new Set(retiredPostSlugs.map((slug) => `/${slug}/`));
 const gonePaths = new Set(legacyRoutes.gone);

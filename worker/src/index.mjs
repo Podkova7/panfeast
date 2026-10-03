@@ -1,12 +1,12 @@
 import legacyRoutes from '../../src/data/legacy-routes.json' with { type: 'json' };
 import retiredPostSlugs from '../../src/data/retired-posts.json' with { type: 'json' };
 
-const CANONICAL_HOST = 'app-tipps.com';
-const REDIRECTS = Object.freeze(legacyRoutes.redirects);
-const GONE = new Set(legacyRoutes.gone);
+const CANONICAL_HOST = 'panfeast.com';
+const REDIRECTS = Object.freeze(legacyRoutes.redirects ?? {});
+const GONE = new Set(legacyRoutes.gone ?? []);
 const RETIRED = new Set(retiredPostSlugs.map((slug) => `/${slug}/`));
-const PREFIX_REDIRECTS = Object.freeze(legacyRoutes.prefixRedirects);
-const GONE_PREFIXES = Object.freeze(legacyRoutes.gonePrefixes);
+const PREFIX_REDIRECTS = Object.freeze(legacyRoutes.prefixRedirects ?? []);
+const GONE_PREFIXES = Object.freeze(legacyRoutes.gonePrefixes ?? []);
 
 function normalizeLookupPath(pathname) {
   const collapsed = pathname.replace(/\/{2,}/g, '/');
@@ -52,13 +52,13 @@ function gone(request, requestUrl) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,follow">
-  <title>This article has been withdrawn | App-Tipps.com</title>
+  <title>This article has been withdrawn | Panfeast.com</title>
 </head>
 <body>
   <main>
     <h1>This article has been withdrawn</h1>
     <p>We removed it because it no longer meets our editorial standards.</p>
-    <p><a href="https://app-tipps.com/">Browse the latest App-Tipps articles</a></p>
+    <p><a href="https://panfeast.com/">Browse the latest Panfeast articles</a></p>
   </main>
 </body>
 </html>`;

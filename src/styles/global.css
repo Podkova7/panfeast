@@ -24,7 +24,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .skip { position: absolute; left: -9999px; }
 .skip:focus { left: 12px; top: 12px; z-index: 99; background: #fff; padding: 10px 14px; border-radius: 6px; }
 .site-head { background: var(--ink); color: #fff; }
-.head-top { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 14px 0; }
+.head-top { display: flex; align-items: center; justify-content: space-between; gap: 14px 20px; flex-wrap: wrap; padding: 14px 0; }
 .brand { display: flex; flex-direction: column; text-decoration: none; color: #fff; line-height: 1.15; }
 .brand b { font-size: 22px; letter-spacing: -.02em; }
 .brand span { font-size: 12px; color: #9aa4b5; font-weight: 400; }

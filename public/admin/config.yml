@@ -1,13 +1,13 @@
 backend:
   name: github
-  repo: pdmonetization/app-tipps
+  repo: Podkova7/panfeast
   branch: main
   auth_methods: [token]
 
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
-site_url: https://app-tipps.com
-display_url: https://app-tipps.com
+site_url: https://panfeast.com
+display_url: https://panfeast.com
 
 collections:
   - name: posts
@@ -28,14 +28,14 @@ collections:
       - name: author
         label: Byline
         widget: select
-        default: "App-Tipps Editorial"
-        options: ["App-Tipps Editorial", "Sylvie Fox", "Olivia Williams", "Amelia Thomas", "Daniel Clark", "Andrew Wright", "Sophia Garcia", "Michael Wilson", "Alexander Davis", "James Smith", "Mia Martinez"]
+        default: "Panfeast Editorial"
+        options: ["Panfeast Editorial", "Panfest Editorial", "Sylvie Fox", "Olivia Williams", "Amelia Thomas", "Daniel Clark", "Andrew Wright", "Sophia Garcia", "Michael Wilson", "Alexander Davis", "James Smith", "Mia Martinez"]
       - name: category
         label: Category
         widget: select
-        options: ["Game Review", "App Review", "Game Guide", "App Tips", "Comparison", "News", "AT's Best Picks", "Redeem Codes"]
+        options: ["iOS Guides", "iPhone Tips", "Mac & macOS", "Apple Watch", "App Reviews", "Apple Ecosystem", "News"]
       - { name: categories, label: Extra categories, widget: list, required: false }
-      - { name: tags, label: Tags, widget: list, required: false, hint: "Examples: Android, iOS, Balatro, Card Games" }
+      - { name: tags, label: Tags, widget: list, required: false, hint: "Examples: iOS, iPhone, macOS, Apple, Privacy" }
       - { name: featuredImage, label: Featured image, widget: image, required: false, hint: "Upload an image here if the article has one." }
       - { name: featuredImageAlt, label: Image alt text, widget: string, required: false, hint: "Describe what is visible in the image." }
       - { name: rating, label: Review score out of 5, widget: number, required: false, value_type: float, min: 1, max: 5, step: 0.1 }

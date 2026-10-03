@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import { PUBLISHER, SITE } from '../consts';
 import { simplePageBreadcrumb } from '../lib/schema';
-const description = 'What cookies and similar technologies App-Tipps.com may use, what each category does, and how consent will be handled when optional services are enabled.';
+const description = `What cookies and similar technologies ${SITE.name}.com may use, what each category does, and how consent will be handled when optional services are enabled.`;
 const url = `${SITE.url}/cookie-policy/`;
 ---
 <Base title="Cookie Policy"
@@ -18,26 +18,24 @@ const url = `${SITE.url}/cookie-policy/`;
     <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / Cookie Policy</nav>
     <div class="prose" style="padding:34px 0 10px">
       <h1>Cookie Policy</h1>
-      <p class="updated">Last updated 24 August 2026.</p>
+      <p class="updated">Last updated 2 October 2026.</p>
 
       <p>
         Cookies and similar technologies can store or read information on a device. This page explains
-        the categories App-Tipps may use. For how we handle personal data generally, see our
+        the categories {SITE.name} may use. For how we handle personal data generally, see our
         {' '}<a href="/cookies-privacy-policy/">Privacy Policy</a>.
       </p>
 
       <h2>Current site state</h2>
       <p>
-        App-Tipps currently uses Google Analytics 4 for audience measurement and may serve advertising
-        through Google Ad Manager or Google AdSense. A Google-certified consent platform is enabled for
-        visitors in regions where Google requires it, and optional storage remains disabled until the
-        required choice has been collected.
+        {SITE.name} currently uses privacy-focused static hosting. When analytics or advertising integrations
+        (such as Google AdSense) are active, standard consent mechanisms apply.
       </p>
 
       <h2>Cookie categories</h2>
       <h3>Strictly necessary</h3>
       <p>
-        Technologies that are required to deliver, secure or operate the website. These do not depend on
+        Technologies that are required to deliver, secure, or operate the website. These do not depend on
         advertising or analytics preferences and may be used where they are necessary for the service.
       </p>
       <h3>Analytics</h3>
@@ -46,25 +44,26 @@ const url = `${SITE.url}/cookie-policy/`;
         enable analytics that requires consent, it will remain off until the required choice has been
         collected.
       </p>
-      <h3>Advertising</h3>
+      <h3>Advertising (Including Google AdSense &amp; DoubleClick)</h3>
       <p>
-        Advertising providers may use cookies or similar identifiers to deliver ads, limit repetition and
-        measure performance. Personalised advertising may involve additional processing to infer interests.
-        Where consent is required, these technologies will not be enabled before that consent is obtained.
+        Third-party advertising providers (such as Google AdSense) use cookies (including the DoubleClick DART cookie)
+        to deliver ads, limit ad repetition, and measure performance. Personalised advertising may involve processing
+        to infer user interests based on browsing history across websites. Where consent is required under European law,
+        these cookies will not be enabled before affirmative consent is obtained via our Google-certified Consent Management Platform.
       </p>
       <h3>Affiliate tracking</h3>
       <p>
         Some articles may link to merchants or services through affiliate programmes. When you follow an
         affiliate link, the destination provider may use its own tracking technology so a purchase or
-        signup can be attributed to App-Tipps. That technology is controlled by the destination provider
+        signup can be attributed to {SITE.name}. That technology is controlled by the destination provider
         and is subject to its own policy.
       </p>
 
-      <h2>Google advertising consent</h2>
+      <h2>Advertising consent</h2>
       <p>
-        If Google AdSense or Google Ad Manager is enabled for visitors in the European Economic Area, the
-        United Kingdom or Switzerland, App-Tipps will use a Google-certified consent management platform
-        integrated with the IAB Europe Transparency and Consent Framework where Google requires it.
+        If advertising is enabled for visitors in the European Economic Area, the
+        United Kingdom or Switzerland, {SITE.name} will use a certified consent management platform
+        integrated with the IAB Europe Transparency and Consent Framework where required.
       </p>
 
       <h2>Changing your choices</h2>

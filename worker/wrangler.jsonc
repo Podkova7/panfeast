@@ -1,6 +1,6 @@
 {
   "$schema": "../node_modules/wrangler/config-schema.json",
-  "name": "app-tipps-seo-router",
+  "name": "panfeast-seo-router",
   "main": "src/index.mjs",
   "compatibility_date": "2026-08-25",
   "compatibility_flags": ["nodejs_compat"],
@@ -8,8 +8,8 @@
   "preview_urls": false,
   "routes": [
     {
-      "pattern": "app-tipps.com/*",
-      "zone_name": "app-tipps.com"
+      "pattern": "panfeast.com/*",
+      "zone_name": "panfeast.com"
     }
   ],
   "observability": {

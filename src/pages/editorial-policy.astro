@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import { PUBLISHER, SITE } from '../consts';
 import { simplePageBreadcrumb } from '../lib/schema';
-const description = 'How App-Tipps.com reports, reviews and scores, how we handle corrections and conflicts of interest, and how advertising is kept separate from editorial.';
+const description = `How ${SITE.name} reports, reviews and scores, how we handle corrections and conflicts of interest, and how advertising is kept separate from editorial.`;
 const url = `${SITE.url}/editorial-policy/`;
 ---
 <Base title="Editorial Policy"
@@ -18,95 +18,63 @@ const url = `${SITE.url}/editorial-policy/`;
     <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / Editorial Policy</nav>
     <div class="prose" style="padding:34px 0 10px">
       <h1>Editorial Policy</h1>
-      <p class="updated">Last updated 14 August 2026.</p>
+      <p class="updated">Last updated 2 October 2026.</p>
 
       <p>
-        App-Tipps.com covers mainstream mobile games and applications. This page sets out how we report,
-        how we review, how we correct mistakes, and how our commercial arrangements work. Questions go to
-        {' '}<a href={`mailto:${PUBLISHER.editorialEmail}`}>{PUBLISHER.editorialEmail}</a>.
+        {SITE.name}.com is an independent publication dedicated exclusively to iOS, iPhone, iPad, Mac, watchOS, and the Apple ecosystem. This page sets out how we report, how we test software and hardware, how we correct mistakes, and how our commercial arrangements work. Questions can be directed to{' '}
+        <a href={`mailto:${PUBLISHER.editorialEmail}`}>{PUBLISHER.editorialEmail}</a>.
       </p>
 
       <h2>What we publish</h2>
       <ol>
-        <li>Game and app reviews</li>
-        <li>Game guides and app tips</li>
-        <li>Mobile industry news</li>
-        <li>Comparisons between competing apps and games</li>
+        <li>Comprehensive iOS and iPadOS tutorials and guides</li>
+        <li>iPhone battery, performance, camera, and security optimization tips</li>
+        <li>Mac and macOS workflows and power-user configurations</li>
+        <li>In-depth, independent reviews of iOS apps and Apple accessories</li>
+        <li>Apple ecosystem updates, Continuity walkthroughs, and verified industry news</li>
       </ol>
       <p>
-        Every article is reviewed and approved by an editor before publication. Research and drafting
-        tools may assist the process, but a human editor is responsible for checking factual claims,
-        deciding what is published and approving the finished article. We do not republish or lightly
-        rework other publications' articles as our own.
+        Every article is reviewed and approved by an editor before publication. Research and drafting tools may assist the process, but human editors are responsible for verifying technical steps, checking factual accuracy on current Apple operating systems, and approving the final publication.
       </p>
 
       <h2>Reporting standards</h2>
       <ul>
-        <li>We seek verifiable sources and credit the original reporter when a story is not ours.</li>
-        <li>Rumours and leaks are labelled as rumours and leaks.</li>
-        <li>We do not write headlines that the article does not support.</li>
-        <li>We answer questions about our accuracy rather than ignoring them.</li>
-        <li>We honour reasonable requests for source anonymity.</li>
+        <li>We prioritize verifiable testing on actual Apple hardware running supported iOS and macOS versions.</li>
+        <li>Rumours and prospective supply chain leaks are clearly labelled as rumours.</li>
+        <li>We write accurate, descriptive headlines that match the article content without clickbait.</li>
+        <li>We prompt and transparently correct errors when software updates change behavior.</li>
       </ul>
 
       <h2>How we review and score</h2>
       <p>
-        First-person claims about using an app or game are only made when that use actually took place.
-        Review scores are editorial assessments based on the article's evaluation, available product
-        information and, where applicable, hands-on use. Articles based primarily on research are not
-        presented as first-person testing. The editorial team as a whole is responsible for what appears
-        on the site. Games are assessed on gameplay, monetisation, graphics and audio, among other factors.
-        Scores run to a maximum of 5.0:
+        First-person claims about testing an app, accessory, or feature are only made when hands-on evaluation took place. Review scores are editorial assessments based on usability, design quality, privacy practices, system resource footprint, and value for money:
       </p>
       <ul>
-        <li><strong>4.3 and above</strong> &mdash; very good, worth your time</li>
-        <li><strong>3.5 to 4.29</strong> &mdash; good</li>
-        <li><strong>2.0 to 3.49</strong> &mdash; average</li>
-        <li><strong>below 2.0</strong> &mdash; poor</li>
+        <li><strong>4.5 to 5.0</strong> &mdash; Outstanding, best-in-class Apple ecosystem experience</li>
+        <li><strong>3.8 to 4.4</strong> &mdash; Highly recommended with minor caveats</li>
+        <li><strong>2.5 to 3.7</strong> &mdash; Acceptable, but better alternatives exist</li>
+        <li><strong>Below 2.5</strong> &mdash; Poor implementation or privacy concerns</li>
       </ul>
-      <p>
-        Mobile games and apps change constantly. When a significant update lands, we may revisit a title
-        and change its score. The publication and update dates on every article tell you how current it is.
-      </p>
 
       <h2>Corrections</h2>
       <p>
-        We correct errors rather than quietly deleting them. Send the article URL and the problem to
-        {' '}<a href={`mailto:${PUBLISHER.editorialEmail}`}>{PUBLISHER.editorialEmail}</a>. Substantive
-        corrections are noted on the article, and the update date changes so you can see it happened.
+        We correct inaccuracies rather than quietly deleting them. If an Apple software update alters a procedure explained in one of our guides, please send the article URL and details to{' '}
+        <a href={`mailto:${PUBLISHER.editorialEmail}`}>{PUBLISHER.editorialEmail}</a>.
       </p>
 
       <h2>Bylines and pen names</h2>
       <p>
-        App-Tipps uses consistent editorial bylines and pen names so readers can follow work published
-        under the same name over time. The <strong>App-Tipps Editorial</strong> byline is used for work
-        produced or reviewed collectively by the editorial team rather than attributed to an individual
-        byline. Editorial responsibility for everything on this site rests with {PUBLISHER.legalName}.
-        You can browse our bylines on the <a href="/authors/">Authors page</a> or read more on our
-        <a href="/about/">About page</a>.
+        {SITE.name} uses consistent editorial bylines. The <strong>{SITE.name} Editorial</strong> byline is used for work produced or reviewed collectively by our technical staff. Editorial responsibility for all content on this site rests with {PUBLISHER.legalName}. You can browse our writers on the <a href="/authors/">Authors page</a>.
       </p>
 
-      <h2>Advertising, affiliates and independence</h2>
+      <h2>Advertising and editorial independence</h2>
       <p>
-        We keep a strict separation between advertising and editorial. Advertising is labelled as
-        advertising. Articles containing affiliate links carry a disclosure at the top.
-      </p>
-      <p>
-        We earn money three ways: display advertising, affiliate commission, and occasional sponsored
-        content that is clearly marked as sponsored. None of these buy a verdict. If a product we earn
-        commission on is bad, we say so. If a product we have no relationship with is excellent, we say
-        that too.
-      </p>
-      <p>
-        We do not accept payment to remove or amend a negative review, and we do not give advertisers
-        advance sight of editorial coverage.
+        We maintain strict boundaries between editorial evaluation and advertising. Commercial relationships never determine our scores or recommendations. If an app or accessory is substandard, we say so plainly. We do not accept payment to remove or alter negative assessments.
       </p>
 
       <h2>What we will not publish</h2>
       <p>
-        We do not cover gambling, real-money wagering, or schemes presented as easy ways to make money.
-        We do not link to modified APKs, cheat tools, or anything that breaks a platform's terms of
-        service. We do not publish content aimed at children under 13.
+        We do not cover malware, pirated software, jailbreak tweaks that compromise device security, or illicit profile certificates that violate Apple's developer agreements and user privacy.
       </p>
     </div>
   </div>

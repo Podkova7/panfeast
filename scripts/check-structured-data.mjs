@@ -1,7 +1,7 @@
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative, sep } from 'node:path';
 
-const SITE = 'https://app-tipps.com';
+const SITE = 'https://panfeast.com';
 const ORGANIZATION_ID = `${SITE}/#organization`;
 const WEBSITE_ID = `${SITE}/#website`;
 const dist = join(process.cwd(), 'dist');
@@ -80,7 +80,7 @@ let reviewPages = 0;
 
 for (const file of walk(dist).filter((name) => name.endsWith('.html'))) {
   const html = readFileSync(file, 'utf8');
-  if (html.includes('name="app-tipps-route"')) continue;
+  if (html.includes('name="panfest-route"') || html.includes('name="app-tipps-route"')) continue;
 
   const path = pagePath(file);
   // The Sveltia CMS authentication shell is an intentionally noindex admin tool,
@@ -194,7 +194,7 @@ for (const file of walk(dist).filter((name) => name.endsWith('.html'))) {
         main.reviewRating?.bestRating !== 5 || main.reviewRating?.worstRating !== 1) {
       errors.push(`${path}: Review rating must use the visible 1–5 editorial scale`);
     }
-    const visible = html.match(/aria-label=["']App-Tipps editorial score: ([0-9.]+) out of 5["']/i)?.[1];
+    const visible = html.match(/aria-label=["'](?:Panfest|App-Tipps) editorial score: ([0-9.]+) out of 5["']/i)?.[1];
     if (Number(visible) !== value) errors.push(`${path}: visible review score does not match reviewRating`);
   } else if (main.reviewRating || main.itemReviewed) {
     articlePages += 1;

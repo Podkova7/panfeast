@@ -19,13 +19,13 @@ const title = first
   : `Latest articles - page ${page.currentPage}`;
 const description = first
   ? SITE.description
-  : `Page ${page.currentPage} of app and mobile game reviews, guides and news from App-Tipps.com.`;
+  : `Page ${page.currentPage} of iOS and Apple guides, tutorials, and reviews from ${SITE.name}.com.`;
 ---
 <Base {title} {description} noindex={!first}>
   <div class="wrap">
     <div class="page-head">
-      <h1>{first ? 'Apps and mobile games, reviewed properly' : `Latest articles - page ${page.currentPage}`}</h1>
-      {first && <p>Hands-on reviews, guides and industry news for iOS and Android, published independently since 2020.</p>}
+      <h1>{first ? 'iOS and Apple Ecosystem, Explored in Depth' : `Latest articles - page ${page.currentPage}`}</h1>
+      {first && <p>In-depth guides, optimization tutorials, and expert tips for iOS, iPhone, iPad, Mac, and Apple gear.</p>}
     </div>
     <div class="grid">
       {page.data.map((post, i) => <PostCard post={post} eager={i < 3} />)}

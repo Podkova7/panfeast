@@ -41,7 +41,7 @@ const schema = indexable ? [
   ]),
 ] : undefined;
 ---
-<Base title={title} description={intro || `${name} articles from App-Tipps.com.`}
+<Base title={title} description={intro || `${name} articles from ${SITE.name}.com.`}
       noindex={!indexable} {schema}>
   <div class="wrap">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {name}</nav>

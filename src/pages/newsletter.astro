@@ -1,8 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
+import { SITE } from '../consts';
 ---
 <Base title="Newsletter"
-      description="Subscribe to the App-Tipps.com newsletter for reviews, guides and mobile industry news."
+      description={`Subscribe to the ${SITE.name} newsletter for Apple guides, iOS tutorials, and ecosystem updates.`}
       noindex={true}>
   <div class="wrap">
     <div class="prose" style="padding:34px 0 10px">

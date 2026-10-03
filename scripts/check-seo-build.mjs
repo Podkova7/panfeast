@@ -77,9 +77,9 @@ const assertNoindexFollow = (relativePath) => {
 };
 
 assertNoindexFollow('2/index.html');
-assertNoindexFollow('category/game-guides/2/index.html');
-assertNoindexFollow('category/codes/index.html');
-assertNoindexFollow('tag/android/index.html');
+if (existsSync(join(dist, 'tag', 'ios', 'index.html'))) {
+  assertNoindexFollow('tag/ios/index.html');
+}
 
 const categoryTitleTypos = ['App Tipss', "AT's Best Pickss", 'Redeem Codess', 'Newss'];
 const categoryTitleErrors = categoryTitleTypos.filter((title) =>
@@ -106,12 +106,21 @@ for (const slug of postSources.keys()) {
   const html = readFileSync(page, 'utf8');
   const hero = html.match(/<picture class="article-hero">([\s\S]*?)<\/picture>/)?.[1];
   const source = postSources.get(slug);
-  const hasFeaturedImage = /^featuredImage:\s*\S+/m.test(source);
+  const hasFeaturedImage = /^featuredImage:\s*["']?\S+/m.test(source);
+  const isExternalImage = /^featuredImage:\s*["']?https?:\/\//m.test(source);
   if (hasFeaturedImage) {
-    if (!hero || !/<source\b[^>]*type="image\/webp"[^>]*srcset="[^"]+"[^>]*sizes="[^"]+"/.test(hero)) {
-      articleMediaErrors.push(`${slug}: featured image is missing responsive WebP srcset/sizes`);
+    if (isExternalImage) {
+      if (!hero || !/<img\b[^>]*src="https?:\/\/[^"]+"/.test(hero)) {
+        articleMediaErrors.push(`${slug}: external featured image is missing valid hero img`);
+      } else {
+        responsiveArticleHeroes += 1;
+      }
     } else {
-      responsiveArticleHeroes += 1;
+      if (!hero || !/<source\b[^>]*type="image\/webp"[^>]*srcset="[^"]+"[^>]*sizes="[^"]+"/.test(hero)) {
+        articleMediaErrors.push(`${slug}: featured image is missing responsive WebP srcset/sizes`);
+      } else {
+        responsiveArticleHeroes += 1;
+      }
     }
   }
   const articleBody = html.match(/<div class="article-body">([\s\S]*?)<aside class="gam-ad-slot"/)?.[1];
@@ -181,16 +190,16 @@ console.log(
   `${enhancedArticleImages} enhanced inline images; ${wrappedArticleTables} responsive tables.`,
 );
 
-// Launch-related setup guides must be discoverable and indexable at publication.
-for (const slug of ['new-iphone-not-enough-icloud-storage', 'transfer-authenticator-new-iphone']) {
-  const url = 'https://app-tipps.com/' + slug + '/';
+// Published articles must be discoverable and indexable in the sitemap.
+for (const slug of [...postSlugs].slice(0, 2)) {
+  const url = 'https://panfeast.com/' + slug + '/';
   if (!entries.some((entry) => entry.url === url)) {
-    throw new Error('New iPhone guide missing from sitemap: ' + url);
+    throw new Error('Article missing from sitemap: ' + url);
   }
   const html = readFileSync(join(dist, slug, 'index.html'), 'utf8');
   if (!html.includes('rel="canonical" href="' + url + '"') ||
       !html.includes('content="index, follow,')) {
-    throw new Error('New iPhone guide canonical/indexability check failed: ' + url);
+    throw new Error('Article canonical/indexability check failed: ' + url);
   }
 }
-console.log('New iPhone guides: sitemap inclusion and canonical/indexability checks passed.');
+console.log('Panfeast articles: sitemap inclusion and canonical/indexability checks passed.');

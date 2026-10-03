@@ -2,9 +2,10 @@
 import Base from '../layouts/Base.astro';
 import PostCard from '../components/PostCard.astro';
 import { allPosts } from '../lib/posts';
+import { SITE } from '../consts';
 const recent = (await allPosts()).slice(0, 3);
 ---
-<Base title="Page not found" description="That page does not exist on App-Tipps.com." noindex={true}>
+<Base title="Page not found" description={`That page does not exist on ${SITE.name}.com.`} noindex={true}>
   <div class="wrap">
     <div class="page-head">
       <h1>That page does not exist</h1>

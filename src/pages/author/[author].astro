@@ -20,10 +20,11 @@ export const getStaticPaths = (async () => {
 
 const { author, posts } = Astro.props;
 const title = `${author.name} - Author at ${SITE.name}`;
-const description = `${author.name} covers mobile apps and games for ${SITE.name}. Browse ${posts.length} published articles under this byline.`;
+const description = `${author.name} covers iOS, macOS, and the Apple ecosystem for ${SITE.name}. Browse ${posts.length} published articles under this byline.`;
 const url = `${SITE.url}/author/${author.slug}/`;
-const entityId = author.name === 'App-Tipps Editorial' ? `${url}#editorial-team` : `${url}#person`;
-const entity = author.name === 'App-Tipps Editorial'
+const isEditorial = author.name === 'Panfeast Editorial' || author.name === 'Panfest Editorial';
+const entityId = isEditorial ? `${url}#editorial-team` : `${url}#person`;
+const entity = isEditorial
   ? {
       '@type': 'Organization',
       '@id': entityId,
@@ -64,11 +65,11 @@ const schema = [
     <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/authors/">Authors</a> / {author.name}</nav>
 
     <header class="page-head" style="max-width:780px">
-      <p class="eyebrow">{author.name === 'App-Tipps Editorial' ? 'Editorial team' : 'Author'}</p>
+      <p class="eyebrow">{isEditorial ? 'Editorial team' : 'Author'}</p>
       <h1>{author.name}</h1>
       <p>{author.bio}</p>
       <p style="margin-top:18px;font-size:14px">
-        App-Tipps has covered mobile apps and games since 2020. Articles are produced according to our
+        {SITE.name} covers iOS and the Apple ecosystem. Articles are produced according to our
         <a href="/editorial-policy/">Editorial Policy</a>, and commercial relationships do not determine our editorial conclusions.
       </p>
     </header>

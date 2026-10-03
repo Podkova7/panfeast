@@ -42,7 +42,7 @@ const reviewedName = d.title
   .trim();
 const reviewedType = d.category === 'Game Review' ? 'Game' : 'SoftwareApplication';
 const hasReviewScore = isReview && typeof rating === 'number';
-const authorSchema = d.author === 'App-Tipps Editorial'
+const authorSchema = (d.author === 'Panfeast Editorial' || d.author === 'Panfest Editorial')
   ? {
       '@type': 'Organization',
       '@id': `${authorPage}#editorial-team`,
@@ -51,6 +51,15 @@ const authorSchema = d.author === 'App-Tipps Editorial'
       parentOrganization: { '@id': `${SITE.url}/#organization` },
     }
   : { '@type': 'Person', '@id': `${authorPage}#person`, name: d.author, url: authorPage };
+
+let articleImage = new URL('/apple-touch-icon.png', SITE.url).href;
+if (d.featuredImage) {
+  try {
+    articleImage = new URL(d.featuredImage, SITE.url).href;
+  } catch {
+    articleImage = d.featuredImage;
+  }
+}
 
 const article: any = {
   '@type': hasReviewScore ? 'Review' : 'Article',
@@ -64,7 +73,7 @@ const article: any = {
   isPartOf: { '@id': `${SITE.url}/#website` },
   author: authorSchema,
   publisher: { '@id': `${SITE.url}/#organization` },
-  ...(d.featuredImage ? { image: new URL(d.featuredImage, SITE.url).href } : {}),
+  image: articleImage,
   ...(hasReviewScore ? {
     itemReviewed: { '@type': reviewedType, name: reviewedName || d.title },
     reviewRating: { '@type': 'Rating', ratingValue: rating, bestRating: 5, worstRating: 1 },
@@ -77,7 +86,7 @@ const breadcrumb = breadcrumbSchema(url, [
 ]);
 ---
 <Base title={d.seoTitle || d.title} description={d.description} canonical={d.canonicalUrl ?? url}
-      noindex={d.noindex} ogType="article" ogImage={d.featuredImage} schema={[article, breadcrumb]}
+      noindex={d.noindex} ogType="article" ogImage={d.featuredImage || '/apple-touch-icon.png'} schema={[article, breadcrumb]}
       enableArticleInlineAd>
   <div class="wrap">
     <nav class="crumbs" aria-label="Breadcrumb">
@@ -88,8 +97,8 @@ const breadcrumb = breadcrumbSchema(url, [
       <h1>{d.title}</h1>
       <p class="standfirst">{d.description}</p>
       {hasReviewScore && (
-        <div class="review-score" aria-label={`App-Tipps editorial score: ${rating.toFixed(1)} out of 5`}>
-          <span>App-Tipps editorial score</span>
+        <div class="review-score" aria-label={`${SITE.name} editorial score: ${rating.toFixed(1)} out of 5`}>
+          <span>{SITE.name} editorial score</span>
           <strong>{rating.toFixed(1)}<small>/5</small></strong>
         </div>
       )}
@@ -104,17 +113,17 @@ const breadcrumb = breadcrumbSchema(url, [
       )}
       {affiliate && (
         <p class="disclosure">
-          This article contains affiliate links. If you buy or sign up through one, App-Tipps.com may
+          This article contains affiliate links. If you buy or sign up through one, {SITE.name}.com may
           earn a commission at no extra cost to you. It does not affect what we recommend &mdash; see our
           <a href="/editorial-policy/"> Editorial Policy</a>.
         </p>
       )}
       {d.featuredImage && heroImage && (
         <picture class="article-hero">
-          {heroImage.webpSrcset && (
+          {heroImage.webpSrcset ? (
             <source type="image/webp" srcset={heroImage.webpSrcset}
               sizes="(max-width: 800px) calc(100vw - 32px), 760px" />
-          )}
+          ) : null}
           <img src={d.featuredImage} alt={d.featuredImageAlt ?? d.title}
                width={heroImage.width} height={heroImage.height}
                fetchpriority="high" decoding="async" />
@@ -132,7 +141,7 @@ const breadcrumb = breadcrumbSchema(url, [
 
     {rel.length > 0 && (
       <section aria-labelledby="rel">
-        <h2 id="rel" style="margin:50px 0 0;font-size:22px">More from App-Tipps</h2>
+        <h2 id="rel" style="margin:50px 0 0;font-size:22px">More from {SITE.name}</h2>
         <div class="grid">{rel.map((p) => <PostCard post={p} />)}</div>
       </section>
     )}

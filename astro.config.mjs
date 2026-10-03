@@ -6,7 +6,7 @@ import rehypePublicMedia from './src/plugins/rehype-public-media.mjs';
 import legacyRoutes from './src/data/legacy-routes.json' with { type: 'json' };
 import retiredPostSlugs from './src/data/retired-posts.json' with { type: 'json' };
 
-const SITE_URL = 'https://app-tipps.com';
+const SITE_URL = 'https://panfeast.com';
 const RETIRED_PATHS = new Set(retiredPostSlugs.map((slug) => `/${slug}/`));
 const REDIRECT_PATHS = new Set(Object.keys(legacyRoutes.redirects));
 
@@ -63,6 +63,8 @@ const isPagination = (path) =>
 
 export default defineConfig({
   site: SITE_URL,
+  output: 'static',
+  base: '/',
   trailingSlash: 'always',
   build: { format: 'directory' },
   markdown: { rehypePlugins: [rehypePublicMedia] },
@@ -77,7 +79,7 @@ export default defineConfig({
           !isPagination(path);
       },
       serialize(item) {
-        if (item.url === 'https://app-tipps.com/') item.priority = 1.0;
+        if (item.url === 'https://panfeast.com/') item.priority = 1.0;
         const lastmod = ARTICLE_LASTMOD.get(item.url);
         if (lastmod) item.lastmod = lastmod;
         return item;

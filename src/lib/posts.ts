@@ -10,7 +10,7 @@ import { topicClusterForSlug } from './topic-clusters';
  * slugs are excluded from every generated article/archive page and sitemap.
  * The Cloudflare edge router returns the production 410 Gone response.
  */
-const RETIRED_SLUGS = new Set(retiredPostSlugs);
+const RETIRED_SLUGS = new Set<string>(retiredPostSlugs);
 const REDIRECTED_SLUGS = new Set(
   Object.keys(legacyRoutes.redirects)
     .map((path) => path.split('/').filter(Boolean))

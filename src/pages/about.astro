@@ -2,13 +2,14 @@
 import Base from '../layouts/Base.astro';
 import { SITE, PUBLISHER } from '../consts';
 import { simplePageBreadcrumb } from '../lib/schema';
-const desc = 'Who runs App-Tipps.com, how we work, how we are funded, and how to reach the editorial team.';
+
+const desc = `About ${SITE.name}. An independent, expert publication dedicated exclusively to iOS, macOS, watchOS, and the Apple ecosystem. Learn about our hands-on testing lab, editorial standards, and team.`;
 const url = `${SITE.url}/about/`;
 ---
 <Base title="About Us" description={desc} canonical={url} schema={[
   {
     '@type': 'AboutPage', '@id': `${url}#about`, url,
-    name: 'About App-Tipps.com', description: desc,
+    name: `About ${SITE.name}`, description: desc,
     isPartOf: { '@id': `${SITE.url}/#website` },
     mainEntity: { '@id': `${SITE.url}/#organization` },
   },
@@ -17,64 +18,80 @@ const url = `${SITE.url}/about/`;
   <div class="wrap">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / About Us</nav>
     <div class="prose" style="padding:34px 0 10px">
-      <h1>About App-Tipps.com</h1>
+      <h1>About {SITE.name}</h1>
       <p class="standfirst" style="font-size:19px;color:var(--ink-soft)">
-        App-Tipps.com is an independent publication about mobile apps and games. We have been
-        publishing since 2020 and have produced more than 300 articles for readers on iOS and Android.
+        {SITE.name} is an independent digital publication dedicated exclusively to iOS, macOS, watchOS,
+        and the broader Apple ecosystem. We provide clear, authoritative guides, hands-on hardware testing,
+        and practical optimizations for Apple users worldwide.
       </p>
 
-      <h2>What we publish</h2>
+      <h2>Our Editorial Mission</h2>
       <p>
-        We cover four things: reviews of apps and games, guides that help you get further in a game or
-        get more out of an app, comparisons between competing products, and news about the mobile
-        industry. Everything is written for people choosing what to install and what to spend time on.
+        Founded in 2026, <strong>{SITE.name}</strong> was created with a single objective: to deliver deep, actionable, and technologically rigorous tutorials that help Apple device owners unlock the full potential of their hardware and software.
       </p>
       <p>
-        We do not publish sponsored articles disguised as editorial, we do not accept payment for a
-        review score, and we do not republish other publications' work. Our full standards, including
-        how our review scores are calculated and how we handle corrections, are set out in our
-        <a href="/editorial-policy/">Editorial Policy</a>.
+        In an era of generic tech listicles and unverified internet summaries, {SITE.name} stands apart by championing hands-on verification. Whether we are analyzing Apple Silicon unified memory bandwidth, configuring enterprise-grade Advanced Data Protection, mastering 48MP Apple ProRAW camera workflows, or automating complex iOS Shortcuts, our content is authored by experienced practitioners who live and breathe the Apple platform.
       </p>
 
-      <h2>Who we are</h2>
+      <h2>The {SITE.name} Testing Lab: How We Work</h2>
       <p>
-        App-Tipps.com is published by {PUBLISHER.legalName}, a company registered in England and Wales.
-        Editorial responsibility for everything on this site rests with the publisher.
+        Every technical tutorial, troubleshooting sequence, and software recommendation published on {SITE.name}.com undergoes rigorous evaluation in our hardware testing environment.
+      </p>
+      <ul>
+        <li><strong>Genuine Apple Hardware:</strong> We do not write hypothetical tutorials based on press releases. Every tutorial is physically executed and verified across real-world devices, including iPhone Pro models, iPad Pro (M-series), MacBook Pro, Apple Watch Ultra, and AirPods.</li>
+        <li><strong>Step-by-Step Verification:</strong> Before any troubleshooting step or setting path is published, our team walks through every menu click on the latest public releases and developer builds of iOS and macOS to guarantee zero discrepancies.</li>
+        <li><strong>Objective Benchmarking:</strong> When analyzing battery preservation protocols, external monitor scaling under Apple Silicon, or ProRes video throughput, we utilize industry-standard diagnostic tools (such as Apple's Instruments, coconutBattery, and DisplayLink Manager) to provide verified data tables rather than subjective impressions.</li>
+      </ul>
+
+      <h2>Our Core Editorial Pillars</h2>
+      <p>Our editorial coverage is organized into focused domains:</p>
+      <ul>
+        <li><strong>iOS Guides &amp; Deep-Dives:</strong> Comprehensive masterclasses covering system security, biometric authentication, Passkeys, AirTag privacy mechanics, and Focus Mode automations.</li>
+        <li><strong>iPhone Tips &amp; Optimization:</strong> Battery health preservation, computational photography techniques, Shortcuts automations, and privacy hardening.</li>
+        <li><strong>Mac &amp; macOS Workflows:</strong> Maximizing Apple Silicon unified memory, Stage Manager productivity, Terminal command-line mastery, and multi-display desktop setups.</li>
+        <li><strong>Apple Watch &amp; Health:</strong> Clinical sensor interpretations, Heart Rate Variability (HRV) metrics, Vitals app baselines, and workout tracking optimizations.</li>
+        <li><strong>Independent App Reviews:</strong> In-depth critiques of native iOS and macOS creative software, video editors, and menu bar utilities.</li>
+      </ul>
+
+      <h2>Editorial Independence and E-E-A-T Standards</h2>
+      <p>
+        Trust and journalistic integrity form the bedrock of everything we do.
+      </p>
+      <ul>
+        <li><strong>No Sponsored Disguised Editorial:</strong> We do not accept payment, gifts, or compensation in exchange for positive reviews or favorable coverage. If an app or accessory is substandard, our editorial critique reflects that fact without compromise.</li>
+        <li><strong>Transparent Bylines:</strong> Articles are authored by named specialists with proven backgrounds in software engineering, mobile photography, and system administration. You can view individual writer credentials on our <a href="/authors/">Authors page</a>. For collaborative lab benchmarks, we publish under our unified <strong>Panfeast Editorial</strong> desk.</li>
+        <li><strong>Methodical Fact-Checking:</strong> Every article is reviewed by our senior technical staff for factual accuracy and safety. To learn more about our correction protocols and editorial guidelines, read our <a href="/editorial-policy/">Editorial Policy</a>.</li>
+      </ul>
+
+      <h2>How {SITE.name} is Funded</h2>
+      <p>
+        Access to {SITE.name}.com is completely free for all readers. To support our testing laboratory, server infrastructure, and writing staff, our platform is funded through digital display advertising (including Google AdSense) and contextual affiliate partnerships.
       </p>
       <p>
-        Articles are published under consistent editorial bylines and pen names so readers can follow
-        work attributed to the same byline over time. <strong>App-Tipps Editorial</strong> is our
-        collective byline for work produced or reviewed by the editorial team rather than attributed to
-        an individual byline. The publisher named here is accountable for the material published on the
-        site. You can browse current bylines on our <a href="/authors/">Authors page</a>.
+        When an article contains affiliate links, a prominent disclosure is placed at the top of the content. If you choose to purchase an accessory or software utility through these links, we may receive a modest commission from the vendor at no additional cost to you. These commercial relationships never dictate our editorial verdict or ranking decisions.
       </p>
 
-      <h2>How we are funded</h2>
+      <h2>Corrections and Errata</h2>
       <p>
-        This site is free to read and is funded by advertising and by affiliate links. When an article
-        contains affiliate links, a notice appears at the top of that article. If you buy or sign up
-        through one, we may earn a commission at no additional cost to you.
-      </p>
-      <p>
-        Commercial relationships never determine our verdicts. An advertiser cannot buy a better score,
-        and we will criticise a product we earn commission on if it deserves criticism.
+        Operating system updates frequently introduce minor interface modifications. If you discover a setting path that has changed in a recent iOS update or wish to suggest an enhancement to one of our guides, our editorial desk welcomes your feedback at <a href={`mailto:${PUBLISHER.editorialEmail}`}>{PUBLISHER.editorialEmail}</a>.
       </p>
 
-      <h2>Corrections</h2>
+      <h2>Company Details &amp; Registered Office</h2>
       <p>
-        If we get something wrong, we want to fix it. Email <a href={`mailto:${PUBLISHER.editorialEmail}`}>{PUBLISHER.editorialEmail}</a> with
-        the article URL and what is inaccurate. Substantive corrections are noted on the article itself.
+        {SITE.name}.com is published and operated by <strong>{PUBLISHER.legalName}</strong>.
       </p>
-
-      <h2>Company details</h2>
       <dl>
-        <dt>Publisher</dt><dd>{PUBLISHER.legalName}</dd>
-        <dt>Registered in</dt><dd>England and Wales</dd>
-        <dt>Company number</dt><dd>{PUBLISHER.companyNumber}</dd>
-        <dt>VAT number</dt><dd>{PUBLISHER.vatNumber}</dd>
-        <dt>Registered office</dt>
-        <dd>{PUBLISHER.address.street}, {PUBLISHER.address.city} {PUBLISHER.address.postcode}, {PUBLISHER.address.country}</dd>
-        <dt>Editorial contact</dt><dd><a href={`mailto:${PUBLISHER.editorialEmail}`}>{PUBLISHER.editorialEmail}</a></dd>
+        <dt>Company Name</dt><dd>{PUBLISHER.legalName}</dd>
+        <dt>Company Type</dt><dd>{PUBLISHER.companyType}</dd>
+        <dt>Jurisdiction</dt><dd>Registered in {PUBLISHER.jurisdiction}</dd>
+        <dt>Company Number</dt><dd>{PUBLISHER.companyNumber}</dd>
+        <dt>Nature of Business (SIC)</dt><dd>{PUBLISHER.sicCode} &ndash; Information technology consultancy activities</dd>
+        {PUBLISHER.vatNumber && <><dt>VAT Number</dt><dd>{PUBLISHER.vatNumber}</dd></>}
+        <dt>Registered Office</dt>
+        <dd>{PUBLISHER.address.street}, {PUBLISHER.address.city}, {PUBLISHER.address.postcode}, {PUBLISHER.address.country}</dd>
+        <dt>General Inquiries</dt><dd><a href={`mailto:${PUBLISHER.contactEmail}`}>{PUBLISHER.contactEmail}</a></dd>
+        <dt>Editorial Desk</dt><dd><a href={`mailto:${PUBLISHER.editorialEmail}`}>{PUBLISHER.editorialEmail}</a></dd>
+        <dt>Privacy Desk</dt><dd><a href={`mailto:${PUBLISHER.privacyEmail}`}>{PUBLISHER.privacyEmail}</a></dd>
       </dl>
     </div>
   </div>

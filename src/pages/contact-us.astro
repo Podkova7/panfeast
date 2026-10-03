@@ -2,15 +2,17 @@
 import Base from '../layouts/Base.astro';
 import { SITE, PUBLISHER } from '../consts';
 import { simplePageBreadcrumb } from '../lib/schema';
+
+const desc = `Contact the ${SITE.name} editorial team, submit iOS news tips, report tutorial corrections, or submit data privacy inquiries.`;
 const url = `${SITE.url}/contact-us/`;
 ---
 <Base title="Contact Us"
-      description="How to reach the App-Tipps.com editorial team about corrections, tips, press enquiries, privacy requests or advertising."
+      description={desc}
       canonical={url}
       schema={[
         {
           '@type': 'ContactPage', '@id': `${url}#contact`, url,
-          name: 'Contact App-Tipps.com',
+          name: `Contact ${SITE.name}`,
           isPartOf: { '@id': `${SITE.url}/#website` },
           mainEntity: { '@id': `${SITE.url}/#organization` },
         },
@@ -19,39 +21,64 @@ const url = `${SITE.url}/contact-us/`;
   <div class="wrap">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / Contact Us</nav>
     <div class="prose" style="padding:34px 0 10px">
-      <h1>Contact us</h1>
-      <p>
-        We read everything sent to us and reply to anything that needs a reply. One address covers all
-        of it: <a href={`mailto:${PUBLISHER.editorialEmail}`}>{PUBLISHER.editorialEmail}</a>
+      <h1>Contact Us</h1>
+      <p class="standfirst" style="font-size:18px;color:var(--ink-soft)">
+        Have a question about one of our Apple tutorials, an app review inquiry, a technical correction, or a press inquiry? We welcome correspondence from our readers, developers, and partners.
       </p>
 
-      <h2>What to include</h2>
-      <h3>Corrections</h3>
-      <p>Send the article URL and what is wrong. We aim to respond within three working days.</p>
-      <h3>News tips and review requests</h3>
+      <h2>How to Reach Our Team</h2>
       <p>
-        Tell us what the app or game is, which platforms it runs on, and when it launches. We cannot
-        promise coverage, and we do not guarantee a positive review in exchange for access.
+        To ensure your message reaches the appropriate department promptly, please direct your inquiry to one of our dedicated email channels below. We strive to review and respond to all reader inquiries within <strong>24 to 48 business hours</strong>.
       </p>
-      <h3>Privacy and data requests</h3>
-      <p>
-        To ask what data we hold about you, or to have it deleted, use the same address and put
-        "Data request" in the subject line. See our <a href="/cookies-privacy-policy/">Privacy Policy</a> for
-        your rights and our response times.
-      </p>
-      <h3>Advertising</h3>
-      <p>Use the same address with "Advertising" in the subject line.</p>
 
-      <h2>Postal address</h2>
+      <ul>
+        <li>
+          <strong>General Inquiries &amp; Support:</strong><br />
+          <a href={`mailto:${PUBLISHER.contactEmail}`}>{PUBLISHER.contactEmail}</a><br />
+          <span style="font-size:14px;color:var(--ink-soft)">For general questions, website feedback, and reader communications.</span>
+        </li>
+        <li style="margin-top:14px">
+          <strong>Editorial Desk &amp; News Tips:</strong><br />
+          <a href={`mailto:${PUBLISHER.editorialEmail}`}>{PUBLISHER.editorialEmail}</a><br />
+          <span style="font-size:14px;color:var(--ink-soft)">For submitting tutorial corrections, iOS feature observations, or app review pitches.</span>
+        </li>
+        <li style="margin-top:14px">
+          <strong>Privacy &amp; Data Protection:</strong><br />
+          <a href={`mailto:${PUBLISHER.privacyEmail}`}>{PUBLISHER.privacyEmail}</a><br />
+          <span style="font-size:14px;color:var(--ink-soft)">For statutory GDPR, UK GDPR, and CCPA data access or deletion requests. Please include "Data Request" in the subject line.</span>
+        </li>
+      </ul>
+
+      <h2>Editorial Guidelines for Inquiries</h2>
+      <h3>Submitting Technical Corrections</h3>
       <p>
-        {PUBLISHER.legalName}<br />
+        Because iOS and macOS update frequently, interface elements and menu locations occasionally change. If you notice a setting path discrepancy in one of our guides, please email us with:
+      </p>
+      <ul>
+        <li>The exact URL of the article.</li>
+        <li>Your specific device model and the exact iOS/macOS version installed.</li>
+        <li>A brief description of the updated menu behavior or setting location.</li>
+      </ul>
+
+      <h3>App Review &amp; Software Pitch Submissions</h3>
+      <p>
+        If you are an independent iOS or macOS developer and would like your application reviewed by our testing laboratory, please provide TestFlight links or promo codes, technical architecture documentation, and privacy disclosures. Note that all app reviews are strictly editorial and independent; we do not accept payment in exchange for positive ratings.
+      </p>
+
+      <h2>Physical Headquarters &amp; Mailing Address</h2>
+      <p>
+        <strong>{PUBLISHER.legalName}</strong><br />
         {PUBLISHER.address.street}<br />
-        {PUBLISHER.address.city} {PUBLISHER.address.postcode}<br />
+        {PUBLISHER.address.city}, {PUBLISHER.address.postcode}<br />
         {PUBLISHER.address.country}
       </p>
-      <p class="updated">
-        Company number {PUBLISHER.companyNumber} &middot; VAT {PUBLISHER.vatNumber}
-      </p>
+      <dl>
+        <dt>Company Type</dt><dd>{PUBLISHER.companyType}</dd>
+        <dt>Company Registration</dt><dd>Registered in {PUBLISHER.jurisdiction}, No. {PUBLISHER.companyNumber}</dd>
+        <dt>SIC Classification</dt><dd>{PUBLISHER.sicCode} &ndash; Information technology consultancy activities</dd>
+        {PUBLISHER.vatNumber && <><dt>VAT Registration</dt><dd>{PUBLISHER.vatNumber}</dd></>}
+        <dt>Official Website</dt><dd><a href={SITE.url}>{SITE.url}</a></dd>
+      </dl>
     </div>
   </div>
 </Base>

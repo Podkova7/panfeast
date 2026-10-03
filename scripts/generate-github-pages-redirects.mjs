@@ -61,11 +61,11 @@ for (const [from, to] of redirects) {
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="app-tipps-route" content="legacy-redirect-fallback">
+  <meta name="panfest-route" content="legacy-redirect-fallback">
   <meta name="robots" content="noindex,follow">
   <meta http-equiv="refresh" content="0;url=${target}">
-  <link rel="canonical" href="https://app-tipps.com${target}">
-  <title>Page moved | App-Tipps.com</title>
+  <link rel="canonical" href="https://panfeast.com${target}">
+  <title>Page moved | Panfeast.com</title>
   <script>location.replace(${JSON.stringify(to)});</script>
 </head>
 <body>

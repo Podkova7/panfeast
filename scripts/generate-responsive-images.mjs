@@ -31,7 +31,7 @@ async function featuredImages() {
   for (const file of files) {
     const source = await readFile(resolve(postsRoot, file), 'utf8');
     const value = source.match(/^featuredImage:\s*["']?([^"'\r\n]+?)["']?\s*$/m)?.[1];
-    if (value) result.add(value);
+    if (value && value.startsWith('/')) result.add(value);
   }
 
   return [...result].sort();

@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import { topicClusterForSlug } from '../lib/topic-clusters';
+import { SITE } from '../consts';
 
 interface Props {
   currentSlug: string;
@@ -20,7 +21,7 @@ if (missing.length > 0) {
 ---
 {cluster && (
   <aside class="topic-cluster" data-topic-cluster={cluster.key} aria-labelledby={`${cluster.key}-guides`}>
-    <p class="topic-kicker">App-Tipps topic guide</p>
+    <p class="topic-kicker">{SITE.name} topic guide</p>
     <h2 id={`${cluster.key}-guides`}>{cluster.name} guides</h2>
     <p>{cluster.description}</p>
     <a class="hub-link" href={`/guides/${cluster.key}/`}>Open the complete guide hub</a>

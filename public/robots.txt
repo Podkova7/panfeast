@@ -1,8 +1,6 @@
-# https://app-tipps.com/robots.txt
+# https://panfeast.com/robots.txt
 User-agent: *
 Allow: /
 
-# App-Tipps is now a static site. Retired WordPress endpoints must remain
-# crawlable so search engines can see their real 404 response and remove them.
-
-Sitemap: https://app-tipps.com/sitemap-index.xml
+Sitemap: https://panfeast.com/sitemap-index.xml
+Sitemap: https://panfeast.com/sitemap.xml

@@ -1,0 +1,522 @@
+[
+  {
+    "index": 1,
+    "title": "How to Use iPhone Check In: Automatic Safety Alerts and Location Sharing",
+    "seoTitle": "iPhone Check In Guide: Safety Alerts & Location Sharing",
+    "slug": "iphone-check-in-messages-safety-guide",
+    "publishDate": "2026-01-01T08:00:00Z",
+    "category": "iPhone Tips",
+    "categories": [
+      "iPhone Tips",
+      "iOS Guides"
+    ],
+    "tags": [
+      "iPhone",
+      "Safety",
+      "Messages",
+      "Location Sharing",
+      "iOS"
+    ],
+    "author": "Michael Wilson",
+    "primaryKeyword": "iPhone Check In Messages safety",
+    "wordCount": 1157,
+    "imagePrompt": "A sleek minimalist studio photograph of an iPhone held against a soft twilight city background, showing a clean Messages interface with a glowing green Check In confirmation card. Subtle rim lighting, elegant modern composition, 16:9 aspect ratio.",
+    "localImagePath": "/images/iphone-check-in-messages-safety-guide.jpg",
+    "postsImagePath": "/images/posts/iphone-check-in-messages-safety-guide.jpg",
+    "filePath": "src/content/posts/iphone-check-in-messages-safety-guide.md"
+  },
+  {
+    "index": 2,
+    "title": "The Complete Guide to iPhone Stolen Device Protection & Biometric Security",
+    "seoTitle": "iPhone Stolen Device Protection: Complete Security Guide",
+    "slug": "iphone-stolen-device-protection-security-guide",
+    "publishDate": "2026-01-08T08:00:00Z",
+    "category": "iPhone Tips",
+    "categories": [
+      "iPhone Tips",
+      "iOS Guides"
+    ],
+    "tags": [
+      "iPhone",
+      "Security",
+      "Face ID",
+      "Biometrics",
+      "Privacy"
+    ],
+    "author": "Michael Wilson",
+    "primaryKeyword": "iPhone Stolen Device Protection security",
+    "wordCount": 1016,
+    "imagePrompt": "A conceptual minimalist product photograph of a titanium iPhone on a dark slate pedestal, displaying a glowing blue holographic biometric shield icon. High contrast, cinematic soft lighting, clean modern cyber-defense aesthetic, 16:9 aspect ratio.",
+    "localImagePath": "/images/iphone-stolen-device-protection-security-guide.jpg",
+    "postsImagePath": "/images/posts/iphone-stolen-device-protection-security-guide.jpg",
+    "filePath": "src/content/posts/iphone-stolen-device-protection-security-guide.md"
+  },
+  {
+    "index": 3,
+    "title": "How to Clean and Optimize iPhone System Data and Other Storage",
+    "seoTitle": "Clean iPhone System Data: Reclaim Other Storage",
+    "slug": "clean-iphone-system-data-storage-guide",
+    "publishDate": "2026-01-15T08:00:00Z",
+    "category": "iPhone Tips",
+    "categories": [
+      "iPhone Tips",
+      "iOS Guides"
+    ],
+    "tags": [
+      "iPhone",
+      "Storage",
+      "Optimization",
+      "System Data",
+      "Cache"
+    ],
+    "author": "Michael Wilson",
+    "primaryKeyword": "clean iPhone System Data storage",
+    "wordCount": 978,
+    "imagePrompt": "A minimalist technical composition of an iPhone showing a modern clean storage breakdown bar graph glowing with soft violet and amber accents on a light titanium desk surface. Airy studio atmosphere, professional tech review aesthetic, 16:9 aspect ratio.",
+    "localImagePath": "/images/clean-iphone-system-data-storage-guide.jpg",
+    "postsImagePath": "/images/posts/clean-iphone-system-data-storage-guide.jpg",
+    "filePath": "src/content/posts/clean-iphone-system-data-storage-guide.md"
+  },
+  {
+    "index": 4,
+    "title": "How to Master Live Activities and Dynamic Island Alerts on iPhone",
+    "seoTitle": "iPhone Dynamic Island & Live Activities Mastery Guide",
+    "slug": "iphone-dynamic-island-live-activities-guide",
+    "publishDate": "2026-01-22T08:00:00Z",
+    "category": "iPhone Tips",
+    "categories": [
+      "iPhone Tips",
+      "iOS Guides"
+    ],
+    "tags": [
+      "Dynamic Island",
+      "Live Activities",
+      "iPhone",
+      "iOS",
+      "Productivity"
+    ],
+    "author": "Michael Wilson",
+    "primaryKeyword": "iPhone Dynamic Island Live Activities",
+    "wordCount": 923,
+    "imagePrompt": "A detailed close-up product photograph focusing on the top of an iPhone display, showing an expanded pill-shaped Dynamic Island displaying flight status and audio waveforms. Sleek dark aesthetics, soft ambient rim lighting, 16:9 aspect ratio.",
+    "localImagePath": "/images/iphone-dynamic-island-live-activities-guide.jpg",
+    "postsImagePath": "/images/posts/iphone-dynamic-island-live-activities-guide.jpg",
+    "filePath": "src/content/posts/iphone-dynamic-island-live-activities-guide.md"
+  },
+  {
+    "index": 5,
+    "title": "How to Lock and Hide Apps with Face ID on iPhone and iPad",
+    "seoTitle": "Lock and Hide Apps with Face ID: iOS Privacy Guide",
+    "slug": "ios-lock-hide-apps-face-id-guide",
+    "publishDate": "2026-01-29T08:00:00Z",
+    "category": "iOS Guides",
+    "categories": [
+      "iOS Guides",
+      "iPhone Tips"
+    ],
+    "tags": [
+      "iOS",
+      "Privacy",
+      "Face ID",
+      "Security",
+      "Apps"
+    ],
+    "author": "Sylvie Fox",
+    "primaryKeyword": "lock and hide apps Face ID iOS",
+    "wordCount": 934,
+    "imagePrompt": "A minimalist tech concept art photograph depicting a clean iPhone Home Screen on a pale sandstone surface, with a sleek frosted glass padlock icon floating gently over an app icon. Soft diffused studio lighting, modern privacy aesthetic, 16:9 aspect ratio.",
+    "localImagePath": "/images/ios-lock-hide-apps-face-id-guide.jpg",
+    "postsImagePath": "/images/posts/ios-lock-hide-apps-face-id-guide.jpg",
+    "filePath": "src/content/posts/ios-lock-hide-apps-face-id-guide.md"
+  },
+  {
+    "index": 6,
+    "title": "Mastering Stage Manager on iPad: External Display Multitasking Workflows",
+    "seoTitle": "Stage Manager on iPad: External Display Multitasking Guide",
+    "slug": "ipados-stage-manager-multitasking-guide",
+    "publishDate": "2026-02-05T08:00:00Z",
+    "category": "iOS Guides",
+    "categories": [
+      "iOS Guides",
+      "Mac & macOS"
+    ],
+    "tags": [
+      "iPadOS",
+      "Stage Manager",
+      "Multitasking",
+      "External Display",
+      "Productivity"
+    ],
+    "author": "Sylvie Fox",
+    "primaryKeyword": "Stage Manager iPad multitasking external display",
+    "wordCount": 997,
+    "imagePrompt": "A modern minimalist productivity desk setup featuring an iPad Pro connected via a single braided USB-C cable to an ultrawide studio display, showing overlapping Stage Manager windows in perfect alignment. Clean oak desk, soft daylight, 16:9 aspect ratio.",
+    "localImagePath": "/images/ipados-stage-manager-multitasking-guide.jpg",
+    "postsImagePath": "/images/posts/ipados-stage-manager-multitasking-guide.jpg",
+    "filePath": "src/content/posts/ipados-stage-manager-multitasking-guide.md"
+  },
+  {
+    "index": 7,
+    "title": "How to Create Custom Smart Folders in Apple Notes for Project Organization",
+    "seoTitle": "Apple Notes Smart Folders: Setup & Filter Guide",
+    "slug": "apple-notes-smart-folders-filters-guide",
+    "publishDate": "2026-02-12T08:00:00Z",
+    "category": "iOS Guides",
+    "categories": [
+      "iOS Guides",
+      "Mac & macOS"
+    ],
+    "tags": [
+      "Apple Notes",
+      "Smart Folders",
+      "Productivity",
+      "Organization",
+      "iOS"
+    ],
+    "author": "Sylvie Fox",
+    "primaryKeyword": "Apple Notes Smart Folders filters",
+    "wordCount": 877,
+    "imagePrompt": "A clean minimalist flat-lay photograph of an iPad Pro with Apple Pencil resting on an off-white architectural workspace desk, displaying neatly organized Apple Notes smart folders with glowing amber filter tags. Soft daylight, 16:9 aspect ratio.",
+    "localImagePath": "/images/apple-notes-smart-folders-filters-guide.jpg",
+    "postsImagePath": "/images/posts/apple-notes-smart-folders-filters-guide.jpg",
+    "filePath": "src/content/posts/apple-notes-smart-folders-filters-guide.md"
+  },
+  {
+    "index": 8,
+    "title": "The Definitive Guide to iOS Voice Control: Hands-Free Navigation & Commands",
+    "seoTitle": "iOS Voice Control Guide: Complete Hands-Free Navigation",
+    "slug": "ios-voice-control-hands-free-navigation-guide",
+    "publishDate": "2026-02-19T08:00:00Z",
+    "category": "iOS Guides",
+    "categories": [
+      "iOS Guides",
+      "iPhone Tips"
+    ],
+    "tags": [
+      "Voice Control",
+      "Accessibility",
+      "Hands-Free",
+      "iOS",
+      "Automation"
+    ],
+    "author": "Sylvie Fox",
+    "primaryKeyword": "iOS Voice Control hands-free navigation",
+    "wordCount": 879,
+    "imagePrompt": "A minimalist technical photograph of an iPhone mounted on a sleek aluminum studio stand, displaying a crisp blue Voice Control number grid overlay across a modern iOS home screen. Clean studio background, directional soft lighting, 16:9 aspect ratio.",
+    "localImagePath": "/images/ios-voice-control-hands-free-navigation-guide.jpg",
+    "postsImagePath": "/images/posts/ios-voice-control-hands-free-navigation-guide.jpg",
+    "filePath": "src/content/posts/ios-voice-control-hands-free-navigation-guide.md"
+  },
+  {
+    "index": 9,
+    "title": "How to Troubleshoot and Fix macOS Spotlight Indexing Issues",
+    "seoTitle": "Fix macOS Spotlight Indexing: Rebuild & Repair Guide",
+    "slug": "macos-spotlight-rebuild-index-troubleshooting",
+    "publishDate": "2026-02-26T08:00:00Z",
+    "category": "Mac & macOS",
+    "categories": [
+      "Mac & macOS",
+      "iOS Guides"
+    ],
+    "tags": [
+      "macOS",
+      "Spotlight",
+      "Troubleshooting",
+      "Terminal",
+      "Mac"
+    ],
+    "author": "Daniel Clark",
+    "primaryKeyword": "fix macOS Spotlight indexing rebuild",
+    "wordCount": 887,
+    "imagePrompt": "A minimalist technical composition featuring a sleek space black MacBook Pro on a matte slate desk, with Spotlight search bar open displaying crisp search results and a translucent Terminal window in the background. Soft diffused overhead lighting, 16:9 aspect ratio.",
+    "localImagePath": "/images/macos-spotlight-rebuild-index-troubleshooting.jpg",
+    "postsImagePath": "/images/posts/macos-spotlight-rebuild-index-troubleshooting.jpg",
+    "filePath": "src/content/posts/macos-spotlight-rebuild-index-troubleshooting.md"
+  },
+  {
+    "index": 10,
+    "title": "How to Use macOS Screen Sharing and High Performance Virtual Display",
+    "seoTitle": "macOS Screen Sharing Guide: Remote Access & High Performance",
+    "slug": "macos-screen-sharing-remote-access-guide",
+    "publishDate": "2026-03-05T08:00:00Z",
+    "category": "Mac & macOS",
+    "categories": [
+      "Mac & macOS",
+      "Apple Ecosystem"
+    ],
+    "tags": [
+      "macOS",
+      "Screen Sharing",
+      "Remote Access",
+      "Apple Silicon",
+      "Networking"
+    ],
+    "author": "Daniel Clark",
+    "primaryKeyword": "macOS Screen Sharing remote access",
+    "wordCount": 829,
+    "imagePrompt": "A sleek minimalist studio desk setup showing a MacBook Pro remotely controlling a Mac Studio desktop display with sub-millisecond response latency, connected over high-speed local network. Clean architectural aesthetic, 16:9 aspect ratio.",
+    "localImagePath": "/images/macos-screen-sharing-remote-access-guide.jpg",
+    "postsImagePath": "/images/posts/macos-screen-sharing-remote-access-guide.jpg",
+    "filePath": "src/content/posts/macos-screen-sharing-remote-access-guide.md"
+  },
+  {
+    "index": 11,
+    "title": "The Mac Power User's Guide to Smart Mailboxes in Apple Mail",
+    "seoTitle": "Apple Mail Smart Mailboxes: Mac Organization Guide",
+    "slug": "apple-mail-smart-mailboxes-organization-guide",
+    "publishDate": "2026-03-12T08:00:00Z",
+    "category": "Mac & macOS",
+    "categories": [
+      "Mac & macOS",
+      "iOS Guides"
+    ],
+    "tags": [
+      "Apple Mail",
+      "Smart Mailboxes",
+      "Productivity",
+      "macOS",
+      "Organization"
+    ],
+    "author": "Alexander Davis",
+    "primaryKeyword": "Apple Mail Smart Mailboxes organization",
+    "wordCount": 916,
+    "imagePrompt": "A minimalist architectural overhead shot of a sleek Mac workspace, showing an open Apple Mail window displaying neat geometric Smart Mailbox labels glowing softly in warm blue and graphite. Clean modern aesthetic, 16:9 aspect ratio.",
+    "localImagePath": "/images/apple-mail-smart-mailboxes-organization-guide.jpg",
+    "postsImagePath": "/images/posts/apple-mail-smart-mailboxes-organization-guide.jpg",
+    "filePath": "src/content/posts/apple-mail-smart-mailboxes-organization-guide.md"
+  },
+  {
+    "index": 12,
+    "title": "How to Manage macOS Login Items and Background Daemons for Faster Boot Times",
+    "seoTitle": "Manage macOS Login Items & Background Daemons Guide",
+    "slug": "macos-login-items-background-daemons-guide",
+    "publishDate": "2026-03-19T08:00:00Z",
+    "category": "Mac & macOS",
+    "categories": [
+      "Mac & macOS",
+      "iPhone Tips"
+    ],
+    "tags": [
+      "macOS",
+      "Login Items",
+      "Optimization",
+      "Performance",
+      "Mac"
+    ],
+    "author": "Daniel Clark",
+    "primaryKeyword": "manage macOS Login Items background daemons",
+    "wordCount": 879,
+    "imagePrompt": "A sleek minimalist technical visualization of a macOS system diagnostic dashboard showing background daemons and startup items in clean tabular rows with glowing status indicators. Dark mode, modern brushed metal texture, 16:9 aspect ratio.",
+    "localImagePath": "/images/macos-login-items-background-daemons-guide.jpg",
+    "postsImagePath": "/images/posts/macos-login-items-background-daemons-guide.jpg",
+    "filePath": "src/content/posts/macos-login-items-background-daemons-guide.md"
+  },
+  {
+    "index": 13,
+    "title": "How to Set Up and Use Sleep Tracking and Sleep Stages on Apple Watch",
+    "seoTitle": "Apple Watch Sleep Tracking: Setup & Stages Guide",
+    "slug": "apple-watch-sleep-tracking-stages-guide",
+    "publishDate": "2026-03-26T08:00:00Z",
+    "category": "Apple Watch",
+    "categories": [
+      "Apple Watch",
+      "iPhone Tips"
+    ],
+    "tags": [
+      "Apple Watch",
+      "Sleep Tracking",
+      "Health",
+      "Biomarkers",
+      "watchOS"
+    ],
+    "author": "Sophia Garcia",
+    "primaryKeyword": "Apple Watch sleep tracking sleep stages",
+    "wordCount": 842,
+    "imagePrompt": "A serene minimalist still-life photograph of an Apple Watch resting on a soft linen nightstand, display showing deep purple and teal Sleep Stage bars (REM, Core, Deep sleep). Warm dim nocturnal lighting, peaceful wellness aesthetic, 16:9 aspect ratio.",
+    "localImagePath": "/images/apple-watch-sleep-tracking-stages-guide.jpg",
+    "postsImagePath": "/images/posts/apple-watch-sleep-tracking-stages-guide.jpg",
+    "filePath": "src/content/posts/apple-watch-sleep-tracking-stages-guide.md"
+  },
+  {
+    "index": 14,
+    "title": "Apple Watch Fall Detection & Crash Detection: How Emergency Dispatch Operates",
+    "seoTitle": "Apple Watch Fall & Crash Detection: Emergency Guide",
+    "slug": "apple-watch-fall-crash-detection-emergency-guide",
+    "publishDate": "2026-04-02T08:00:00Z",
+    "category": "Apple Watch",
+    "categories": [
+      "Apple Watch",
+      "iPhone Tips"
+    ],
+    "tags": [
+      "Apple Watch",
+      "Fall Detection",
+      "Crash Detection",
+      "Emergency SOS",
+      "Safety"
+    ],
+    "author": "Sophia Garcia",
+    "primaryKeyword": "Apple Watch Fall Detection Crash Detection",
+    "wordCount": 914,
+    "imagePrompt": "A powerful minimalist tech photograph of an Apple Watch Ultra lying on a rugged asphalt road, with a red emergency SOS dial glowing boldly on the high-brightness display. Dramatic low-angle cinematic lighting, 16:9 aspect ratio.",
+    "localImagePath": "/images/apple-watch-fall-crash-detection-emergency-guide.jpg",
+    "postsImagePath": "/images/posts/apple-watch-fall-crash-detection-emergency-guide.jpg",
+    "filePath": "src/content/posts/apple-watch-fall-crash-detection-emergency-guide.md"
+  },
+  {
+    "index": 15,
+    "title": "How to Calibrate Apple Watch Sensors for Maximum Distance & Pace Accuracy",
+    "seoTitle": "Calibrate Apple Watch Sensors: Distance & Pace Accuracy",
+    "slug": "apple-watch-sensor-calibration-accuracy-guide",
+    "publishDate": "2026-04-09T08:00:00Z",
+    "category": "Apple Watch",
+    "categories": [
+      "Apple Watch",
+      "iPhone Tips"
+    ],
+    "tags": [
+      "Apple Watch",
+      "Calibration",
+      "Fitness",
+      "Sensors",
+      "Workouts"
+    ],
+    "author": "Sophia Garcia",
+    "primaryKeyword": "calibrate Apple Watch sensors distance pace",
+    "wordCount": 855,
+    "imagePrompt": "A crisp minimalist sports photography shot of an Apple Watch on a runner's wrist poised above an all-weather red running track, display showing accurate pace and cadence metrics. Bright morning sunlight, professional athletic aesthetic, 16:9 aspect ratio.",
+    "localImagePath": "/images/apple-watch-sensor-calibration-accuracy-guide.jpg",
+    "postsImagePath": "/images/posts/apple-watch-sensor-calibration-accuracy-guide.jpg",
+    "filePath": "src/content/posts/apple-watch-sensor-calibration-accuracy-guide.md"
+  },
+  {
+    "index": 16,
+    "title": "How to Use Continuity Camera: Turn Your iPhone into a High-End Mac Webcam",
+    "seoTitle": "Continuity Camera Guide: Turn iPhone into Mac Webcam",
+    "slug": "continuity-camera-iphone-mac-webcam-guide",
+    "publishDate": "2026-04-16T08:00:00Z",
+    "category": "Apple Ecosystem",
+    "categories": [
+      "Apple Ecosystem",
+      "Mac & macOS"
+    ],
+    "tags": [
+      "Continuity Camera",
+      "Mac",
+      "iPhone",
+      "Apple Ecosystem",
+      "Video Calls"
+    ],
+    "author": "Amelia Thomas",
+    "primaryKeyword": "Continuity Camera iPhone Mac webcam",
+    "wordCount": 913,
+    "imagePrompt": "A sleek minimalist studio desk setup showing an iPhone magnetically mounted on top of a MacBook Pro display with a subtle MagSafe bracket, acting as a studio webcam with soft warm rim lighting and clean desk accessories. 16:9 aspect ratio.",
+    "localImagePath": "/images/continuity-camera-iphone-mac-webcam-guide.jpg",
+    "postsImagePath": "/images/posts/continuity-camera-iphone-mac-webcam-guide.jpg",
+    "filePath": "src/content/posts/continuity-camera-iphone-mac-webcam-guide.md"
+  },
+  {
+    "index": 17,
+    "title": "The Definitive Guide to Apple AirPlay: Audio Multiroom and Video Streaming",
+    "seoTitle": "Apple AirPlay Guide: Multiroom Audio & Video Streaming",
+    "slug": "apple-airplay-multiroom-audio-video-streaming-guide",
+    "publishDate": "2026-04-23T08:00:00Z",
+    "category": "Apple Ecosystem",
+    "categories": [
+      "Apple Ecosystem",
+      "iOS Guides"
+    ],
+    "tags": [
+      "AirPlay",
+      "Audio",
+      "Streaming",
+      "HomePod",
+      "Apple Ecosystem"
+    ],
+    "author": "Amelia Thomas",
+    "primaryKeyword": "Apple AirPlay multiroom audio video streaming",
+    "wordCount": 812,
+    "imagePrompt": "A minimalist modern living space showing an iPhone streaming audio seamlessly to multiple sculptural smart speakers and a 4K television, with glowing golden audio waveforms connecting the devices. Warm atmospheric lighting, 16:9 aspect ratio.",
+    "localImagePath": "/images/apple-airplay-multiroom-audio-video-streaming-guide.jpg",
+    "postsImagePath": "/images/posts/apple-airplay-multiroom-audio-video-streaming-guide.jpg",
+    "filePath": "src/content/posts/apple-airplay-multiroom-audio-video-streaming-guide.md"
+  },
+  {
+    "index": 18,
+    "title": "How to Securely Share Passwords and Passkeys with Family Sharing on Apple Devices",
+    "seoTitle": "Share Passwords & Passkeys with Apple Family Sharing",
+    "slug": "apple-family-passwords-passkeys-sharing-guide",
+    "publishDate": "2026-04-30T08:00:00Z",
+    "category": "Apple Ecosystem",
+    "categories": [
+      "Apple Ecosystem",
+      "iOS Guides"
+    ],
+    "tags": [
+      "Passwords",
+      "Passkeys",
+      "Family Sharing",
+      "Security",
+      "iCloud Keychain"
+    ],
+    "author": "Mia Martinez",
+    "primaryKeyword": "share passwords passkeys Apple Family Sharing",
+    "wordCount": 790,
+    "imagePrompt": "A minimalist conceptual still life of two iPhones resting side-by-side on a light maple desk, connected by a glowing golden cryptographic key symbol floating between them. Soft morning light, clean privacy-centric aesthetic, 16:9 aspect ratio.",
+    "localImagePath": "/images/apple-family-passwords-passkeys-sharing-guide.jpg",
+    "postsImagePath": "/images/posts/apple-family-passwords-passkeys-sharing-guide.jpg",
+    "filePath": "src/content/posts/apple-family-passwords-passkeys-sharing-guide.md"
+  },
+  {
+    "index": 19,
+    "title": "Flighty App Review: Is the Premier Live Flight Tracker for iPhone Worth It?",
+    "seoTitle": "Flighty App Review: Best Live Flight Tracker on iOS",
+    "slug": "flighty-app-review-ios",
+    "publishDate": "2026-05-07T08:00:00Z",
+    "category": "App Reviews",
+    "categories": [
+      "App Reviews",
+      "iPhone Tips"
+    ],
+    "tags": [
+      "Flighty",
+      "App Review",
+      "Travel",
+      "Dynamic Island",
+      "iOS Apps"
+    ],
+    "author": "Olivia Williams",
+    "primaryKeyword": "Flighty app review iPhone flight tracker",
+    "wordCount": 915,
+    "imagePrompt": "A sleek minimalist overhead photograph of an iPhone resting on a modern airport lounge marble table, displaying the Flighty app with glowing flight path trajectories and Dynamic Island flight status pill. Clean travel aesthetic, 16:9 aspect ratio.",
+    "localImagePath": "/images/flighty-app-review-ios.jpg",
+    "postsImagePath": "/images/posts/flighty-app-review-ios.jpg",
+    "filePath": "src/content/posts/flighty-app-review-ios.md"
+  },
+  {
+    "index": 20,
+    "title": "Overcast vs. Apple Podcasts: Comprehensive Podcast App Review",
+    "seoTitle": "Overcast vs Apple Podcasts: Best iOS Podcast App Review",
+    "slug": "overcast-vs-apple-podcasts-review",
+    "publishDate": "2026-05-14T08:00:00Z",
+    "category": "App Reviews",
+    "categories": [
+      "App Reviews",
+      "iOS Guides"
+    ],
+    "tags": [
+      "Overcast",
+      "Apple Podcasts",
+      "Audio",
+      "App Review",
+      "iOS Apps"
+    ],
+    "author": "Olivia Williams",
+    "primaryKeyword": "Overcast vs Apple Podcasts comparison review",
+    "wordCount": 822,
+    "imagePrompt": "A clean minimalist split-screen visual composition featuring an iPhone running Overcast alongside an iPhone running Apple Podcasts, resting on a brushed aluminum audio mastering desk beside premium studio headphones. 16:9 aspect ratio.",
+    "localImagePath": "/images/overcast-vs-apple-podcasts-review.jpg",
+    "postsImagePath": "/images/posts/overcast-vs-apple-podcasts-review.jpg",
+    "filePath": "src/content/posts/overcast-vs-apple-podcasts-review.md"
+  }
+]

@@ -18,8 +18,8 @@ if (!validate(config)) {
   );
 }
 
-if (config.workers_dev !== false || config.routes?.[0]?.pattern !== 'app-tipps.com/*') {
-  throw new Error('Worker check failed: the production app-tipps.com route is not configured.');
+if (config.workers_dev !== false || config.routes?.[0]?.pattern !== 'panfeast.com/*') {
+  throw new Error('Worker check failed: the production panfeast.com route is not configured.');
 }
 
 await build({

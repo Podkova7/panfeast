@@ -9,6 +9,13 @@ type ResponsiveImage = {
 
 export async function publicResponsiveImage(src: string): Promise<ResponsiveImage> {
   const dimensions = await publicImageDimensions(src);
+  if (src.startsWith('http://') || src.startsWith('https://')) {
+    return {
+      ...dimensions,
+      webpSrcset: '',
+    };
+  }
+
   const widths = RESPONSIVE_IMAGE_WIDTHS.filter((width) => width <= dimensions.width);
 
   return {

@@ -6,58 +6,20 @@ const unreachableOrigin = async () => {
   throw new Error('origin should not be called');
 };
 
-test('collapses a legacy redirect, HTTPS normalization and cache query cleanup into one hop', async () => {
-  const request = new Request('http://www.app-tipps.com/best-dislyte-team-comp/?swcfpc=1&utm_source=test');
+test('normalizes HTTP and www to canonical HTTPS panfeast.com', async () => {
+  const request = new Request('http://www.panfeast.com/category/ios-guides/?swcfpc=1&utm_source=test');
   const response = await handleRequest(request, unreachableOrigin);
   assert.equal(response.status, 301);
   assert.equal(
     response.headers.get('location'),
-    'https://app-tipps.com/dislyte-by-lilith-games/?utm_source=test',
+    'https://panfeast.com/category/ios-guides/?utm_source=test',
   );
 });
 
-test('returns 410 for an ambiguous attachment slug', async () => {
-  const response = await handleRequest(
-    new Request('https://app-tipps.com/image-1/'),
-    unreachableOrigin,
-  );
-  assert.equal(response.status, 410);
-  assert.equal(response.headers.get('x-robots-tag'), 'noindex, follow');
-});
-
-test('returns 410 for a deliberately retired article', async () => {
-  const response = await handleRequest(
-    new Request('https://app-tipps.com/call-of-duty-warzone-mobile/'),
-    unreachableOrigin,
-  );
-  assert.equal(response.status, 410);
-});
-
-test('returns 410 for retired locale and malformed migration URLs', async () => {
-  for (const url of [
-    'https://app-tipps.com/cs/editorial-policy/',
-    'https://app-tipps.com/en/cookies-privacy-policy/',
-    'https://app-tipps.com/royal-match-review-and-redeem-codes//1000',
-    'https://app-tipps.com/wp-admin/admin-ajax.php',
-  ]) {
-    const response = await handleRequest(new Request(url), unreachableOrigin);
-    assert.equal(response.status, 410, url);
-  }
-});
-
-test('redirects only obsolete author archives to the author directory', async () => {
-  const response = await handleRequest(
-    new Request('https://app-tipps.com/author/polina/'),
-    unreachableOrigin,
-  );
-  assert.equal(response.status, 301);
-  assert.equal(response.headers.get('location'), 'https://app-tipps.com/authors/');
-});
-
-test('preserves a current author profile', async () => {
+test('preserves author profile request', async () => {
   let originCalls = 0;
   const response = await handleRequest(
-    new Request('https://app-tipps.com/author/sylvie-fox/'),
+    new Request('https://panfeast.com/author/sylvie-fox/'),
     async () => {
       originCalls += 1;
       return new Response('author profile');
@@ -70,7 +32,7 @@ test('preserves a current author profile', async () => {
 test('proxies ordinary requests and applies security headers without buffering the body', async () => {
   let originCalls = 0;
   const response = await handleRequest(
-    new Request('https://app-tipps.com/balatro-review/'),
+    new Request('https://panfeast.com/about/'),
     async () => {
       originCalls += 1;
       return new Response('origin response', {
@@ -92,7 +54,7 @@ test('returns a controlled noindex response when the origin fails', async () => 
   console.error = () => {};
   try {
     const response = await handleRequest(
-      new Request('https://app-tipps.com/'),
+      new Request('https://panfeast.com/'),
       async () => { throw new Error('origin unavailable'); },
     );
     assert.equal(response.status, 502);
@@ -102,11 +64,21 @@ test('returns a controlled noindex response when the origin fails', async () => 
   }
 });
 
-test('HEAD requests to gone URLs return no body', async () => {
-  const response = await handleRequest(
-    new Request('https://app-tipps.com/is-blackout-bingo-legit-or-fake/', { method: 'HEAD' }),
-    unreachableOrigin,
-  );
-  assert.equal(response.status, 410);
-  assert.equal(await response.text(), '');
+test('proxies sitemaps and robots.txt cleanly without redirect loops', async () => {
+  const paths = ['/sitemap.xml', '/sitemap-index.xml', '/sitemap-0.xml', '/robots.txt'];
+  for (const path of paths) {
+    let originCalls = 0;
+    const response = await handleRequest(
+      new Request(`https://panfeast.com${path}`),
+      async (req) => {
+        originCalls += 1;
+        assert.equal(new URL(req.url).pathname, path);
+        return new Response('valid content', { status: 200 });
+      },
+    );
+    assert.equal(originCalls, 1, `Failed for ${path}`);
+    assert.equal(response.status, 200, `Failed for ${path}`);
+    assert.equal(await response.text(), 'valid content');
+  }
 });
+

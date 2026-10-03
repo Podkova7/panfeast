@@ -11,6 +11,10 @@ export function publicImageDimensions(src: string): Promise<Dimensions> {
   if (existing) return existing;
 
   const pending = (async () => {
+    if (src.startsWith('http://') || src.startsWith('https://')) {
+      return { width: 1024, height: 1024 };
+    }
+
     if (!src.startsWith('/')) {
       throw new Error(`Featured images must use a root-relative public path: ${src}`);
     }
