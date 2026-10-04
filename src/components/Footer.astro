@@ -1,7 +1,8 @@
 ---
-import { SITE, PUBLISHER, FOOTER_LINKS, NAV } from '../consts';
+import { SITE, PUBLISHER, FOOTER_LINKS, NAV } from "../consts";
 const year = new Date().getFullYear();
 ---
+
 <footer class="site-foot">
   <div class="wrap">
     <div class="foot-grid">
@@ -11,29 +12,50 @@ const year = new Date().getFullYear();
       </div>
       <div>
         <h2>Sections</h2>
-        <ul>{NAV.map((n) => <li><a href={n.href}>{n.label}</a></li>)}</ul>
+        <ul>
+          {
+            NAV.map((n) => (
+              <li>
+                <a href={n.href}>{n.label}</a>
+              </li>
+            ))
+          }
+        </ul>
       </div>
       <div>
         <h2>About this site</h2>
-        <ul>{FOOTER_LINKS.map((n) => <li><a href={n.href}>{n.label}</a></li>)}</ul>
+        <ul>
+          {
+            FOOTER_LINKS.map((n) => (
+              <li>
+                <a href={n.href}>{n.label}</a>
+              </li>
+            ))
+          }
+        </ul>
       </div>
       <div>
         <h2>Follow</h2>
         <ul>
-          {PUBLISHER.social.twitter && <li><a href={PUBLISHER.social.twitter} rel="noopener">Twitter / X</a></li>}
-          {PUBLISHER.social.facebook && <li><a href={PUBLISHER.social.facebook} rel="noopener">Facebook</a></li>}
-          {PUBLISHER.social.instagram && <li><a href={PUBLISHER.social.instagram} rel="noopener">Instagram</a></li>}
           <li><a href="/rss.xml">RSS feed</a></li>
         </ul>
       </div>
     </div>
     <p class="legal">
-      &copy; {SITE.founded}&ndash;{year} {SITE.name}.com. Published by {PUBLISHER.legalName},
-      a {PUBLISHER.companyType.toLowerCase()} registered in {PUBLISHER.jurisdiction}, no. {PUBLISHER.companyNumber}{PUBLISHER.vatNumber ? `, VAT ${PUBLISHER.vatNumber}` : ''}. Registered office: {PUBLISHER.address.street}, {PUBLISHER.address.city} {PUBLISHER.address.postcode}, {PUBLISHER.address.country}.
+      &copy; {SITE.founded}&ndash;{year}
+      {SITE.name}.com. Published by {PUBLISHER.legalName}, a {
+        PUBLISHER.companyType.toLowerCase()
+      } registered in {PUBLISHER.jurisdiction}, no. {PUBLISHER.companyNumber}{
+        PUBLISHER.vatNumber ? `, VAT ${PUBLISHER.vatNumber}` : ""
+      }. Registered office: {PUBLISHER.address.street}, {PUBLISHER.address.city}
+      {PUBLISHER.address.postcode}, {PUBLISHER.address.country}.
       <br />
-      {SITE.name}.com is reader-supported and may carry advertising and affiliate links.
-      See our <a href="/editorial-policy/">Editorial Policy</a>, <a href="/cookies-privacy-policy/">Privacy Policy</a>, and <a href="/terms-and-conditions/">Terms &amp; Conditions</a>.
-      Apple, iPhone, iPad, Mac, Apple Watch, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries.
+      {SITE.name}.com is reader-supported and may carry advertising and
+      affiliate links. See our <a href="/editorial-policy/">Editorial Policy</a
+      >, <a href="/cookies-privacy-policy/">Privacy Policy</a>, and <a
+        href="/terms-and-conditions/">Terms &amp; Conditions</a
+      >. Apple, iPhone, iPad, Mac, Apple Watch, and iOS are trademarks of Apple
+      Inc., registered in the U.S. and other countries.
     </p>
   </div>
 </footer>
