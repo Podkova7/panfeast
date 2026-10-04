@@ -30,6 +30,13 @@ try {
 const fullTitle = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
 const twitterCard = Astro.props.ogImage ? 'summary_large_image' : 'summary';
 
+const adsenseAccounts: string[] = Array.from(
+  new Set([
+    ...(Array.isArray(INTEGRATIONS.adsenseAccounts) ? INTEGRATIONS.adsenseAccounts : []),
+    ...(INTEGRATIONS.adsensePublisherId ? [INTEGRATIONS.adsensePublisherId] : []),
+  ].filter(Boolean))
+);
+
 const organization = {
   '@type': 'Organization',
   '@id': `${SITE.url}/#organization`,
@@ -149,14 +156,10 @@ const graph = {
     </>
   )}
 
-  {/* Load account-level AdSense meta tag and verification script for site approval. */}
-  {INTEGRATIONS.adsensePublisherId && (
-    <>
-      <meta name="google-adsense-account" content={INTEGRATIONS.adsensePublisherId} />
-      <script is:inline async crossorigin="anonymous"
-        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${INTEGRATIONS.adsensePublisherId}`}></script>
-    </>
-  )}
+  {/* Google AdSense Meta Verification Tags only (no auto-ads or script tags) */}
+  {adsenseAccounts.map((account) => (
+    <meta name="google-adsense-account" content={account} />
+  ))}
 
   {INTEGRATIONS.ga4MeasurementId && (
     <>

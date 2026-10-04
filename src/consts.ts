@@ -40,9 +40,12 @@ export const PUBLISHER = {
   },
 };
 
-/* Fill these in when the accounts exist. Empty string = tag not rendered. */
+/* Fill these in when the accounts exist. Empty string/array = tag not rendered. */
 export const INTEGRATIONS = {
-  adsensePublisherId: '',
+  // Add one or multiple AdSense Publisher IDs here for meta verification:
+  // e.g. adsenseAccounts: ['ca-pub-1234567890123456', 'ca-pub-9876543210987654'],
+  adsenseAccounts: [] as string[],
+  adsensePublisherId: '', // single account fallback
   adManagerNetworkCode: '',
   ga4MeasurementId: '',
   searchConsoleToken: '',
