@@ -156,10 +156,17 @@ const graph = {
     </>
   )}
 
-  {/* Google AdSense Meta Verification Tags only (no auto-ads or script tags) */}
+  {/* ================================================================= */}
+  {/* Google AdSense Meta Verification Codes (paste your tags below):   */}
+  {/* ================================================================= */}
   {adsenseAccounts.map((account) => (
     <meta name="google-adsense-account" content={account} />
   ))}
+  {/* You can also paste raw meta tags directly here:
+  <meta name="google-adsense-account" content="ca-pub-1111111111111111" />
+  <meta name="google-adsense-account" content="ca-pub-2222222222222222" />
+  <meta name="google-adsense-account" content="ca-pub-3333333333333333" />
+  */}
 
   {INTEGRATIONS.ga4MeasurementId && (
     <>
