@@ -70,6 +70,7 @@ export default defineConfig({
   markdown: { rehypePlugins: [rehypePublicMedia] },
   integrations: [
     sitemap({
+      xslURL: '/sitemap.xsl',
       filter: (page) => {
         const path = new URL(page).pathname;
         return !NOINDEX.has(path) &&

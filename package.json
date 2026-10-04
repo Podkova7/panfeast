@@ -7,7 +7,7 @@
     "predev": "node scripts/generate-responsive-images.mjs",
     "dev": "astro dev",
     "prebuild": "node scripts/generate-responsive-images.mjs",
-    "build": "astro check && astro build && node scripts/generate-github-pages-redirects.mjs && node scripts/check-seo-build.mjs && node scripts/check-structured-data.mjs && node scripts/check-topic-clusters.mjs && node scripts/check-internal-links.mjs && node scripts/check-routing.mjs && npm run check:worker",
+    "build": "astro check && astro build && node scripts/sync-sitemaps.mjs && node scripts/generate-github-pages-redirects.mjs && node scripts/check-seo-build.mjs && node scripts/check-structured-data.mjs && node scripts/check-topic-clusters.mjs && node scripts/check-internal-links.mjs && node scripts/check-routing.mjs && npm run check:worker",
     "preview": "astro preview",
     "check": "astro check",
     "score:content": "node scripts/score-content.mjs",

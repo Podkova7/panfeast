@@ -42,14 +42,20 @@ if (!sitemapDirectives || sitemapDirectives.length === 0) {
 // 3. Validate sitemap-index.xml
 const sitemapIndexXml = readFileSync(resolve(distDir, 'sitemap-index.xml'), 'utf8');
 const sitemapIndexMatches = [...sitemapIndexXml.matchAll(/<loc>(.*?)<\/loc>/g)].map(m => m[1]);
-console.log(`\n[sitemap-index.xml] references ${sitemapIndexMatches.length} sub-sitemap(s):`);
-sitemapIndexMatches.forEach(loc => console.log(`  - ${loc}`));
+console.log(`\n[sitemap-index.xml] contains ${sitemapIndexMatches.length} URLs (with XSL styling).`);
+if (sitemapIndexMatches.length < 100) {
+  console.error(`❌ sitemap-index.xml only has ${sitemapIndexMatches.length} URLs! Expected 107.`);
+  allPassed = false;
+}
 
 // 4. Validate sitemap.xml
 const sitemapXml = readFileSync(resolve(distDir, 'sitemap.xml'), 'utf8');
 const sitemapMatches = [...sitemapXml.matchAll(/<loc>(.*?)<\/loc>/g)].map(m => m[1]);
-console.log(`\n[sitemap.xml] references ${sitemapMatches.length} sub-sitemap(s):`);
-sitemapMatches.forEach(loc => console.log(`  - ${loc}`));
+console.log(`\n[sitemap.xml] contains ${sitemapMatches.length} direct URLs (with XSL styling).`);
+if (sitemapMatches.length < 100) {
+  console.error(`❌ sitemap.xml only has ${sitemapMatches.length} URLs! Expected 107.`);
+  allPassed = false;
+}
 
 // 5. Validate sitemap-0.xml
 const sitemap0Xml = readFileSync(resolve(distDir, 'sitemap-0.xml'), 'utf8');
