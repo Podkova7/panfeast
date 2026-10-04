@@ -149,11 +149,14 @@ const graph = {
     </>
   )}
 
-  {/* Load the account-level AdSense script for site verification. Ad slots remain
-      disabled until enableAds is explicitly switched on after approval. */}
-  {INTEGRATIONS.adsensePublisherId &&
-    <script is:inline async crossorigin="anonymous"
-      src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${INTEGRATIONS.adsensePublisherId}`}></script>}
+  {/* Load account-level AdSense meta tag and verification script for site approval. */}
+  {INTEGRATIONS.adsensePublisherId && (
+    <>
+      <meta name="google-adsense-account" content={INTEGRATIONS.adsensePublisherId} />
+      <script is:inline async crossorigin="anonymous"
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${INTEGRATIONS.adsensePublisherId}`}></script>
+    </>
+  )}
 
   {INTEGRATIONS.ga4MeasurementId && (
     <>
