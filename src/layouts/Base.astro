@@ -30,13 +30,6 @@ try {
 const fullTitle = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
 const twitterCard = Astro.props.ogImage ? 'summary_large_image' : 'summary';
 
-const adsenseAccounts: string[] = Array.from(
-  new Set([
-    ...(Array.isArray(INTEGRATIONS.adsenseAccounts) ? INTEGRATIONS.adsenseAccounts : []),
-    ...(INTEGRATIONS.adsensePublisherId ? [INTEGRATIONS.adsensePublisherId] : []),
-  ].filter(Boolean))
-);
-
 const organization = {
   '@type': 'Organization',
   '@id': `${SITE.url}/#organization`,
@@ -96,9 +89,6 @@ const graph = {
   {INTEGRATIONS.searchConsoleToken &&
     <meta name="google-site-verification" content={INTEGRATIONS.searchConsoleToken} />}
 
-  {INTEGRATIONS.adsensePublisherId &&
-    <meta name="google-adsense-account" content={INTEGRATIONS.adsensePublisherId} />}
-
   <meta property="og:site_name" content={SITE.name} />
   <meta property="og:locale" content={SITE.locale} />
   <meta property="og:type" content={ogType} />
@@ -110,6 +100,11 @@ const graph = {
   <meta name="twitter:title" content={fullTitle} />
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={image} />
+<meta name="google-adsense-account" content="ca-pub-8629307866724860">
+<meta name="google-adsense-account" content="ca-pub-6473388027635008">
+<meta name="google-adsense-account" content="ca-pub-7394602097973489">
+<meta name="google-adsense-account" content="ca-pub-4673976467339720">
+
 
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -155,18 +150,6 @@ const graph = {
       </script>
     </>
   )}
-
-  {/* ================================================================= */}
-  {/* Google AdSense Meta Verification Codes (paste your tags below):   */}
-  {/* ================================================================= */}
-  {adsenseAccounts.map((account) => (
-    <meta name="google-adsense-account" content={account} />
-  ))}
-  {/* You can also paste raw meta tags directly here:
-  <meta name="google-adsense-account" content="ca-pub-1111111111111111" />
-  <meta name="google-adsense-account" content="ca-pub-2222222222222222" />
-  <meta name="google-adsense-account" content="ca-pub-3333333333333333" />
-  */}
 
   {INTEGRATIONS.ga4MeasurementId && (
     <>
