@@ -1,0 +1,20 @@
+{
+  "name": "Panfeast",
+  "short_name": "Panfeast",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#10141c",
+  "background_color": "#10141c",
+  "display": "standalone",
+  "start_url": "/"
+}
